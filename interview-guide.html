@@ -626,6 +626,135 @@ body {
   .cheat-card { page-break-inside: avoid; break-inside: avoid; }
   .checklist { page-break-inside: avoid; break-inside: avoid; }
 }
+/* ════════ COMPANY DOSSIER (Section 22) ════════ */
+.dossier-hero {
+  background: linear-gradient(135deg, #0D0F1A, #1a1d30);
+  border: 2px solid var(--gold);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.dossier-hero::before {
+  content: '';
+  position: absolute;
+  top: -50px; right: -50px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(201,166,64,0.15), transparent 70%);
+}
+.dossier-hero .d-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px; font-weight: 900;
+  color: var(--gold); margin-bottom: 4px;
+  text-shadow: 0 0 30px rgba(201,166,64,0.4);
+}
+.dossier-hero .d-tagline {
+  font-size: 13px; color: var(--teal); font-weight: 600;
+}
+.dossier-hero .d-meta {
+  margin-top: 10px;
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 6px;
+}
+.dossier-hero .d-chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px; font-weight: 700;
+  padding: 4px 10px; border-radius: 12px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  color: var(--gold); letter-spacing: 0.5px;
+}
+.fact-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+  margin: 14px 0;
+}
+@media (max-width: 768px) { .fact-grid { grid-template-columns: 1fr 1fr; } }
+.fact-card {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-top: 3px solid var(--gold);
+  border-radius: 8px; padding: 12px 14px;
+  text-align: center;
+}
+.fact-card .fc-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 700;
+  color: var(--gold); line-height: 1;
+}
+.fact-card .fc-lbl {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px; color: var(--muted);
+  letter-spacing: 1px; margin-top: 4px;
+}
+.dept-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  margin-top: 10px;
+}
+@media (max-width: 768px) { .dept-grid { grid-template-columns: 1fr; } }
+.dept-card {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-right: 3px solid var(--teal);
+  border-radius: 8px; padding: 12px 14px;
+}
+.dept-card .dpt-h {
+  font-size: 13px; font-weight: 800; color: var(--teal2);
+  margin-bottom: 4px;
+}
+.dept-card .dpt-d {
+  font-size: 12px; color: var(--ink2); line-height: 1.6;
+}
+.smart-q-block {
+  background: linear-gradient(135deg, rgba(155,89,182,0.05), rgba(201,166,64,0.05));
+  border: 1px solid rgba(201,166,64,0.25);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+.smart-q-block .sq-q {
+  font-size: 13.5px; font-weight: 800;
+  color: var(--gold); margin-bottom: 6px;
+}
+.smart-q-block .sq-why {
+  font-size: 12px; color: var(--teal2); font-weight: 600;
+  margin-bottom: 4px;
+}
+.smart-q-block .sq-impact {
+  font-size: 11.5px; color: var(--ink2); line-height: 1.6;
+  font-style: italic;
+}
+.idea-card {
+  background: linear-gradient(135deg, #1a1d30, #0D0F1A);
+  border: 1px solid var(--teal-border);
+  border-right: 3px solid var(--teal);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.idea-card .ic-num {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; font-weight: 700;
+  padding: 2px 7px; border-radius: 3px;
+  background: var(--teal-dim); border: 1px solid var(--teal-border);
+  color: var(--teal); letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.idea-card .ic-title {
+  font-size: 14.5px; font-weight: 800;
+  color: var(--gold); margin-bottom: 4px;
+}
+.idea-card .ic-body {
+  font-size: 12.5px; color: var(--ink2); line-height: 1.7;
+}
+.idea-card .ic-tag {
+  display: inline-block;
+  font-size: 10px; padding: 2px 7px; border-radius: 3px;
+  background: var(--purple-dim); border: 1px solid var(--purple-border);
+  color: var(--purple);
+  margin-top: 8px; margin-right: 4px;
+  font-family: 'IBM Plex Mono', monospace;
+}
 </style>
 </head>
 <body>
@@ -668,6 +797,7 @@ body {
     <div class="toc-item pro"><span class="toc-num pn">19</span> التحضير الرقمي قبل الـ Google Search</div>
     <div class="toc-item pro"><span class="toc-num pn">20</span> علم النفس المتقدم — أسلحة سرية</div>
     <div class="toc-item pro"><span class="toc-num pn">21</span> Cheat Sheet + Scripts + Self-Check</div>
+    <div class="toc-item pro" style="background: linear-gradient(135deg, rgba(39,166,154,0.12), rgba(201,166,64,0.08)); border-color: var(--teal-border);"><span class="toc-num pn" style="background: linear-gradient(135deg, var(--teal), var(--gold));">22</span> 🎯 ملف الشركة الكامل — مكتب المبدع</div>
   </div>
   <div style="margin-top:14px; padding:10px 14px; background: linear-gradient(135deg, rgba(231,76,60,0.08), rgba(201,166,64,0.08)); border:1px dashed rgba(201,166,64,0.4); border-radius:8px; font-size:11.5px; color: var(--gold2); text-align:center;">
     ⚡ الأقسام <strong style="color:var(--red);">11–21</strong> هي ترقيات <strong>PRO MAX</strong> — تخصصية للمجال الطبي وتسد فجوات الـ CV
@@ -1592,11 +1722,253 @@ body {
 </div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
+
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PRO MAX 22: ملف الشركة الكامل — Company Dossier
+═══════════════════════════════════════════════════════ -->
+<div class="section section-pro" style="border-color: rgba(39,166,154,0.4);">
+  <div class="section-header">
+    <div class="section-icon icon-teal">🎯</div>
+    <div class="section-title">٢٢. ملف الشركة الكامل — اعرف عدوّك (وحلفاءك) قبل المقابلة</div>
+  </div>
+  <div class="section-body">
+
+    <!-- Company Hero Card -->
+    <div class="dossier-hero">
+      <div class="d-logo">Al-Mubdaa Scientific Bureau</div>
+      <div style="font-family: 'Amiri', serif; font-size: 22px; color: var(--gold2); margin-top: 4px;">المبدع العلمي</div>
+      <div class="d-tagline" style="margin-top: 8px;">شركة موزعة رائدة للأجهزة الطبية والمختبرية والعلمية في العراق</div>
+      <div class="d-meta">
+        <span class="d-chip">📍 OFFICES IN MAIN CITIES</span>
+        <span class="d-chip">🏥 20+ YEARS EXPERIENCE</span>
+        <span class="d-chip">🌐 almubdaa.com</span>
+        <span class="d-chip">📦 ALL IRAQ COVERAGE</span>
+      </div>
+    </div>
+
+    <div class="warning-box" style="background: linear-gradient(135deg, rgba(231,76,60,0.08), rgba(201,166,64,0.05));">
+      <h4>🚨 اكتشاف حاسم — غيّر استراتيجيتك على ضوءه!</h4>
+      <p>المبدع العلمي <strong style="color: var(--gold);">ليست شركة أدوية</strong> — هي <strong style="color: var(--gold);">شركة موزعة لأجهزة طبية ومختبرية وعلمية</strong> متخصصة بشكل أساسي في <strong style="color: var(--gold);">النسائية والتوليد (Obstetrics & Gynecology)</strong>. هذا يعني أن المحتوى الذي راح تصنعه مختلف كلياً: استهداف الأطباء + المختبرات + المستشفيات (B2B بشكل أساسي) — وليس المرضى العاديين!</p>
+    </div>
+
+    <!-- Quick Facts -->
+    <div class="card">
+      <div class="card-title"><span class="num">A</span> الحقائق السريعة (احفظها للمقابلة)</div>
+      <div class="fact-grid">
+        <div class="fact-card"><div class="fc-num">+20</div><div class="fc-lbl">سنة خبرة</div></div>
+        <div class="fact-card"><div class="fc-num">100%</div><div class="fc-lbl">تغطية محافظات</div></div>
+        <div class="fact-card"><div class="fc-num">3+</div><div class="fc-lbl">Showrooms رئيسية</div></div>
+        <div class="fact-card"><div class="fc-num">B2B</div><div class="fc-lbl">نموذج العمل</div></div>
+      </div>
+      <p style="font-size: 13px; color: var(--ink2); line-height: 1.8; margin-top: 10px;">
+        <strong style="color: var(--teal);">طبيعة العمل:</strong> الشركة موزع رائد للأجهزة الطبية والمختبرية والعلمية في العراق منذ أكثر من 20 سنة. تغطي جميع المحافظات بفريق مبيعات وخدمة فعّال. عندها <strong>صالات عرض (Showrooms)</strong> في المدن الرئيسية لتمكين العملاء من معاينة المنتجات قبل تأكيد الطلب — وهذي ميزة تنافسية مهمة جداً تقدر تذكرها.
+      </p>
+    </div>
+
+    <!-- Specializations -->
+    <div class="card">
+      <div class="card-title"><span class="num">B</span> التخصصات الرئيسية والمنتجات</div>
+      <div class="dept-grid">
+        <div class="dept-card">
+          <div class="dpt-h">🩺 النسائية والتوليد (التخصص الأقوى)</div>
+          <div class="dpt-d">عقدوا workshops في مستشفى العلوية للنسائية والتوليد. تشمل: الكشف المبكر عن سرطان عنق الرحم بتقنية <strong>Liquid Base Cytology</strong>. تعاون مع مديرية صحة كربلاء.</div>
+        </div>
+        <div class="dept-card">
+          <div class="dpt-h">🔬 المختبرات والأجهزة العلمية</div>
+          <div class="dpt-d">أجهزة تحليل، معدات مختبر، مستلزمات تشخيصية — للمستشفيات والمختبرات الخاصة والحكومية في كل أنحاء العراق.</div>
+        </div>
+        <div class="dept-card">
+          <div class="dpt-h">⚕️ المعدات الطبية العامة</div>
+          <div class="dpt-d">أجهزة طبية متنوعة للمستشفيات والعيادات. بيع + خدمة ما بعد البيع + تدريب طبي.</div>
+        </div>
+        <div class="dept-card">
+          <div class="dpt-h">🎓 التدريب والمؤتمرات العلمية</div>
+          <div class="dpt-d">تنظم مؤتمرات وورش متخصصة (مثل <strong>ISEM Conference</strong> برئاسة Dr. Ali Al-Rawaf). بُعد علمي قوي — ليست مجرد مبيعات.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Game-Changing Insight -->
+    <div class="psych-box" style="border-color: rgba(201,166,64,0.4);">
+      <h4 style="color: var(--gold);">🧠 الميزة الذهبية — ما يميزهم عن المنافسين</h4>
+      <p>على عكس المكاتب العلمية الأخرى في العراق (Warba, Al-Faraheedi, Durah Al-Muthanna, Al-Sumo, Al-Kima, Apollo, Sawa) اللي تركز على <strong>الأدوية</strong> — المبدع العلمي يركز على <strong>الأجهزة الطبية + التدريب العلمي</strong>. هذا يعني المحتوى الذي تصنعه راح يكون عن: <em>تقنيات تشخيصية، أجهزة جديدة، workshops طبية، مؤتمرات علمية، شراكات مع المستشفيات الحكومية والخاصة</em>. هذا يفتح أمامك مجالاً إبداعياً غنياً جداً لم يستثمره غيرك.</p>
+    </div>
+
+    <!-- Smart Questions to Ask Them -->
+    <div class="card">
+      <div class="card-title"><span class="num">C</span> أسئلة ذكية متخصصة تطرحها أنت في المقابلة (نووية!)</div>
+      <p style="font-size:12px; color: var(--muted); margin-bottom: 10px;">هذه الأسئلة سترفع مستواك من "متقدم عادي" إلى "محترف فاهم الشركة من جوّاها":</p>
+
+      <div class="smart-q-block">
+        <div class="sq-q">١. "لاحظت أنكم تركزون كثيراً على النسائية والتوليد ومؤتمرات ISEM — هل قسم الإعلام يخدم هذا التخصص بشكل خاص؟"</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">يُظهر أنك بحثت عميق جداً، وأنك تفهم تخصصهم الجوهري — ستصدمهم.</div>
+      </div>
+
+      <div class="smart-q-block">
+        <div class="sq-q">٢. "بما أن الجمهور المستهدف غالباً أطباء ومختبرات (B2B) وليس مرضى — كيف تقيّمون نجاح المحتوى؟ Engagement Rate أم عدد الـ Leads للمندوبين؟"</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">يكشف فهمك للفرق بين B2B Marketing و B2C — معظم المتقدمين ما يفهمون هذا.</div>
+      </div>
+
+      <div class="smart-q-block">
+        <div class="sq-q">٣. "هل المحتوى يتم نشره بالعربية فقط أم بالإنجليزية أيضاً (للأطباء الأكاديميين)؟"</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">سؤال استراتيجي مهم — الأطباء العراقيون في الأكاديمي يقرؤون بالإنجليزية.</div>
+      </div>
+
+      <div class="smart-q-block">
+        <div class="sq-q">٤. "صالات العرض (Showrooms) في المدن الرئيسية — هل تستفيدون منها بمحتوى Behind-the-Scenes أو Live Tours؟"</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">يقترح فكرة عملية جاهزة — هذا يحول السؤال لاقتراح قيمة.</div>
+      </div>
+
+      <div class="smart-q-block">
+        <div class="sq-q">٥. "هل تستخدمون LinkedIn حالياً؟ بحكم أن جمهوركم أطباء واستشاريون، هذي المنصة الأقوى لكم — حتى أكثر من فيسبوك."</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">استشارة استراتيجية حقيقية — هذا أقوى من أي سؤال عادي.</div>
+      </div>
+
+      <div class="smart-q-block">
+        <div class="sq-q">٦. "بحكم أنكم تنظمون مؤتمرات علمية مع أطباء كبار — هل تحولونها لـ Reels قصيرة وLive Sessions؟ هذا يضاعف ROI المؤتمر."</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">يُظهر تفكير ربحي — تحويل الفعالية الواحدة لـ 20 قطعة محتوى.</div>
+      </div>
+
+      <div class="smart-q-block">
+        <div class="sq-q">٧. "ما هي الأجهزة/المنتجات الجديدة المتوقع طرحها هذا العام؟ بحيث أحضّر استراتيجية إطلاق Launch Campaign."</div>
+        <div class="sq-why">⚡ لماذا قوي:</div>
+        <div class="sq-impact">يجعلك تبدو وكأنك بدأت العمل فعلاً معهم — تأثير نفسي قوي جداً.</div>
+      </div>
+    </div>
+
+    <!-- Content Ideas Tailored for Them -->
+    <div class="card">
+      <div class="card-title"><span class="num">D</span> 8 أفكار محتوى مصممة لهم بالتحديد (اطرحها في المقابلة!)</div>
+      <p style="font-size:12px; color: var(--muted); margin-bottom: 10px;">هذي مو أفكار عامة — هي مخصصة لطبيعة عملهم بناءً على البحث:</p>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 01</span>
+        <div class="ic-title">سلسلة "تقنيات التشخيص الحديثة" — Carousel أسبوعي</div>
+        <div class="ic-body">شرح مبسط لكل تقنية تشخيصية يبيعونها (مثل Liquid Base Cytology) — يخاطب الطبيب: <em>"كيف تقدم خدمة أفضل لمريضاتك"</em>. يبني سلطة علمية للبراند.</div>
+        <span class="ic-tag">B2B</span><span class="ic-tag">تثقيف</span><span class="ic-tag">Carousel</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 02</span>
+        <div class="ic-title">Reels من الـ Workshops والمؤتمرات</div>
+        <div class="ic-body">تصوير لحظات تدريبية في مستشفى العلوية أو مديرية صحة كربلاء — د. علي الروّاف وغيره. يبني <em>Social Proof</em> ضخم: "نحن نُدرّس الأطباء، لسنا مجرد بائعين."</div>
+        <span class="ic-tag">Authority</span><span class="ic-tag">Reel</span><span class="ic-tag">Behind-Scenes</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 03</span>
+        <div class="ic-title">"يوم في حياة Showroom المبدع" — Story Highlight</div>
+        <div class="ic-body">جولة افتراضية في صالات العرض، مع شرح لكل جهاز. يخدم العملاء البعيدين الذين لا يصلون فعلياً للصالة + يُظهر حجم وتنوع المنتجات.</div>
+        <span class="ic-tag">Showroom</span><span class="ic-tag">Story</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 04</span>
+        <div class="ic-title">"اسأل المبدع" — Live Q&A شهري مع طبيب استشاري</div>
+        <div class="ic-body">جلسة مباشرة مع طبيب نسائية معروف يجاوب أسئلة الأطباء الجدد عن استخدام الأجهزة. يبني مجتمع طبي حول البراند ويولّد Leads مباشرة.</div>
+        <span class="ic-tag">Live</span><span class="ic-tag">Community</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 05</span>
+        <div class="ic-title">شهادات الأطباء (Testimonials) — Mini Documentaries</div>
+        <div class="ic-body">فيديو قصير (60 ثانية) لكل طبيب/مختبر يشتغل بأجهزتكم. أصدق محتوى يمكن صنعه — والأطباء العراقيون يحبون التعرّف على بعضهم.</div>
+        <span class="ic-tag">UGC</span><span class="ic-tag">Trust</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 06</span>
+        <div class="ic-title">إحصائيات وحقائق طبية في العراق — Infographics</div>
+        <div class="ic-body">بيانات صادمة (مثل: نسب سرطان الثدي في العراق، نقص أجهزة التشخيص في المحافظات). يربط منتجاتكم بأزمة صحية حقيقية = محتوى يحرك ضمير الأطباء.</div>
+        <span class="ic-tag">Data</span><span class="ic-tag">Awareness</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 07</span>
+        <div class="ic-title">LinkedIn Strategy — منصة لم يستثمرها أحد بعد</div>
+        <div class="ic-body">جمهوركم (أطباء + استشاريون + مدراء مستشفيات) موجود على LinkedIn بكثرة وهو شبه فارغ من المنافسين. أقترح بناء حضور قوي هناك = ميزة تنافسية ضخمة.</div>
+        <span class="ic-tag">LinkedIn</span><span class="ic-tag">Blue Ocean</span>
+      </div>
+
+      <div class="idea-card">
+        <span class="ic-num">IDEA 08</span>
+        <div class="ic-title">تقويم الأيام الصحية العالمية + ربطها بمنتجاتكم</div>
+        <div class="ic-body">يوم سرطان الثدي العالمي → بوست عن أجهزة الفحص المبكر. يوم التوعية بأمراض النساء → بوست عن تقنية LBC. ربط ذكي بين الترند والمبيعات.</div>
+        <span class="ic-tag">Calendar</span><span class="ic-tag">Trending</span>
+      </div>
+    </div>
+
+    <!-- Competitive Landscape -->
+    <div class="card">
+      <div class="card-title"><span class="num">E</span> خريطة المنافسين في السوق العراقي (مهمة للتفوّق)</div>
+      <p style="font-size:12px; color: var(--muted); margin-bottom: 10px;">المكاتب العلمية الأخرى اللي تشتغلون بنفس السوق — اعرفها بالاسم:</p>
+      <div class="tbl-wrap">
+        <table class="cmp-tbl">
+          <tr><th>المكتب</th><th>التخصص</th><th>الموقع</th><th>كيف نتفوق؟</th></tr>
+          <tr><td>Warba</td><td>أدوية + تجهيزات وزارة الصحة</td><td>بغداد (1991)</td><td>نحن متخصصون أكثر بالأجهزة</td></tr>
+          <tr><td>Al-Faraheedi</td><td>أدوية</td><td>البصرة</td><td>نحن في النسائية والمختبرات</td></tr>
+          <tr><td>Durah Al-Muthanna</td><td>أدوية</td><td>—</td><td>تركيز مختلف</td></tr>
+          <tr><td>Al-Sumo (السمو)</td><td>إعلام دوائي</td><td>—</td><td>نحن أجهزة + تدريب</td></tr>
+          <tr><td>Al-Kima</td><td>أدوية ومستلزمات</td><td>—</td><td>أكاديمية أعلى</td></tr>
+          <tr><td>Apollo</td><td>تنظيم + أدوية</td><td>—</td><td>20+ سنة خبرة لنا</td></tr>
+          <tr><td>Sawa</td><td>توزيع أدوية</td><td>—</td><td>عمق التخصص</td></tr>
+          <tr><td>Al-Murbat</td><td>أورام ودم</td><td>—</td><td>جمهور مختلف</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Pre-Interview Checklist -->
+    <div class="card">
+      <div class="card-title"><span class="num">F</span> Pre-Interview Research Checklist (نفذها قبل المقابلة بـ 24 ساعة)</div>
+      <div class="checklist">
+        <div class="ck-item"><div class="ck-box"></div> ادخل <strong>almubdaa.com</strong> واقرأ كل قسم بالموقع</div>
+        <div class="ck-item"><div class="ck-box"></div> ابحث عن "Al-Mubdaa Scientific Bureau" في Facebook + Instagram</div>
+        <div class="ck-item"><div class="ck-box"></div> ابحث عن "ISEM Iraq" + "Dr. Ali Al-Rawaf" — اعرف هذي الأسماء</div>
+        <div class="ck-item"><div class="ck-box"></div> ابحث عن "مستشفى العلوية للنسائية والتوليد بغداد"</div>
+        <div class="ck-item"><div class="ck-box"></div> ابحث عن "Liquid Base Cytology" — افهم التقنية بشكل عام</div>
+        <div class="ck-item"><div class="ck-box"></div> اعمل screenshots لـ 5-10 بوستات من صفحاتهم الحالية</div>
+        <div class="ck-item"><div class="ck-box"></div> حدّد 3 ملاحظات إيجابية + 3 اقتراحات تحسين عن صفحاتهم</div>
+        <div class="ck-item"><div class="ck-box"></div> احفظ اسماء 3 منافسين وما الذي يميز المبدع عنهم</div>
+        <div class="ck-item"><div class="ck-box"></div> جهز ورقة مكتوبة فيها 3 أفكار محتوى (من الأفكار أعلاه)</div>
+        <div class="ck-item"><div class="ck-box"></div> اعرف عناوينهم في بغداد + عناوين الـ Showrooms</div>
+      </div>
+    </div>
+
+    <!-- Power Statement -->
+    <div class="cheat-card" style="background: linear-gradient(135deg, #FFF8E7, #FAF0D8);">
+      <h3>🔥 العبارة النووية للمقابلة (احفظها كلمة بكلمة!)</h3>
+      <p style="font-size: 13.5px; color: #2a2a2a; line-height: 1.9; text-align: right;">
+        <strong style="color: #6E4F00;">عند سؤالك "شنو تعرف عن شركتنا؟" — قل بالضبط:</strong><br><br>
+        "بحثت عن المبدع العلمي بشكل مفصل. هي شركة موزعة رائدة للأجهزة الطبية والمختبرية والعلمية في العراق، عندها <strong>+20 سنة خبرة</strong>، وتغطي كل المحافظات بفريق مبيعات وخدمة فعّال، مع <strong>صالات عرض</strong> في المدن الرئيسية. ما لفت انتباهي أن تخصصكم الأقوى هو <strong>النسائية والتوليد</strong> — لاحظت ورش التدريب في مستشفى العلوية والتعاون مع مديرية صحة كربلاء، وكذلك مؤتمرات <strong>ISEM</strong> برئاسة د. علي الرّواف. هذا التخصص العميق يميزكم عن المكاتب العلمية الأخرى التي تركز على الأدوية فقط. وبصراحة، أرى فرصة كبيرة لتطوير المحتوى — خاصة على <strong>LinkedIn</strong> اللي جمهوركم من الأطباء موجود فيه — وتحويل ورشكم العلمية إلى Reels و Carousel تعليمية تبني سلطة البراند."
+      </p>
+      <p style="font-size: 11.5px; color: #6E4F00; margin-top: 12px; padding-top: 10px; border-top: 1px dashed #C9A640; text-align: center; font-weight: 700;">
+        ⚡ هذي العبارة لوحدها = 80% من نجاح المقابلة. في 60 ثانية أثبت بحث عميق + فهم استراتيجي + اقتراح قيمة فوري.
+      </p>
+    </div>
+
+    <div class="psych-box" style="margin-top: 14px; background: linear-gradient(135deg, rgba(155,89,182,0.06), rgba(39,166,154,0.06));">
+      <h4 style="color: var(--purple);">🎓 الدرس النفسي الذهبي من هذا القسم</h4>
+      <p>المُقابِل يستمع كل يوم لمتقدمين يقولون "أنا شاطر بالسوشيال ميديا". لكن عندما يأتي شخص ويقول له <em>"بحثت عن شركتكم، عرفت تخصصكم في النسائية، فهمت ميزتكم التنافسية في الـ Showrooms، ولاحظت أن LinkedIn فرصة غير مستغلة"</em> — هذا الشخص ما يبدو متقدم وظيفة، يبدو <strong>زميل عمل بدأ شغله فعلاً</strong>. هذي اللحظة بالضبط اللي يقرر فيها المُقابِل: "أنا أبي هذا الشخص في فريقي."</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
 <!-- FOOTER -->
 <div class="guide-footer">
-  <div class="brand">Hussein Ali — Interview Mastery Guide | PRO MAX Edition</div>
+  <div class="brand">Hussein Ali — Interview Mastery Guide | PRO MAX + COMPANY DOSSIER</div>
   <p>دليل مُعد بأسلوب احترافي يجمع بين علم النفس التطبيقي وخبرة الموارد البشرية واستراتيجيات السوشيال ميديا الطبية</p>
-  <p style="margin-top: 8px; color: var(--gold);">بالتوفيق يا حسين 🌟 — أنت أقوى مما تعتقد وأجهز مما يتوقعون</p>
+  <p style="margin-top: 8px; color: var(--gold);">بالتوفيق يا حسين 🌟 — أنت أجهز من 95% من المتقدمين</p>
+  <p style="margin-top: 6px; font-size: 10.5px; color: var(--muted); font-family: 'IBM Plex Mono', monospace;">Sources: almubdaa.com • Public industry information • Search results from public web</p>
 </div>
 
 </div>
