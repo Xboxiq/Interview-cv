@@ -353,6 +353,279 @@ body {
 }
 .guide-footer p { font-size: 12px; color: var(--muted); }
 .guide-footer .brand { color: var(--gold); font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+
+/* ════════ PRO MAX ADDITIONS ════════ */
+.toc-item.pro {
+  background: linear-gradient(135deg, rgba(231,76,60,0.06), rgba(201,166,64,0.06));
+  border: 1px solid rgba(201,166,64,0.25);
+}
+.toc-num.pn {
+  background: linear-gradient(135deg, var(--red), var(--gold));
+  color: #fff;
+}
+.pro-banner {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 700;
+  padding: 3px 10px; border-radius: 4px;
+  background: linear-gradient(135deg, var(--red), var(--gold));
+  color: #fff; letter-spacing: 1px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.section-pro {
+  border: 1px solid rgba(201,166,64,0.25);
+  position: relative;
+}
+.section-pro::before {
+  content: 'PRO MAX';
+  position: absolute;
+  top: 12px; left: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8.5px; font-weight: 700;
+  padding: 2px 7px; border-radius: 3px;
+  background: linear-gradient(135deg, var(--red), var(--gold));
+  color: #fff; letter-spacing: 1.5px;
+  z-index: 2;
+}
+/* table */
+.tbl-wrap { overflow-x: auto; margin: 10px 0 14px; }
+.cmp-tbl {
+  width: 100%; border-collapse: collapse;
+  background: var(--bg4); border-radius: 8px; overflow: hidden;
+  font-size: 12.5px;
+}
+.cmp-tbl th {
+  background: var(--bg3); color: var(--gold);
+  padding: 10px 12px; text-align: right;
+  font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 12px;
+}
+.cmp-tbl td {
+  padding: 9px 12px; color: var(--ink2);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  vertical-align: top;
+}
+.cmp-tbl tr:last-child td { border-bottom: none; }
+.cmp-tbl .ok { color: var(--green); font-weight: 700; }
+.cmp-tbl .no { color: var(--red); font-weight: 700; }
+/* code block / scripts */
+.script-box {
+  background: #0A0C14;
+  border: 1px solid var(--gold-border);
+  border-right: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 10px 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 13px;
+  color: #DEC070;
+  line-height: 1.85;
+}
+.script-box .label {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; font-weight: 700;
+  padding: 2px 8px; border-radius: 3px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  color: var(--gold); margin-bottom: 8px; letter-spacing: 1px;
+}
+/* timeline 30/60/90 */
+.phase-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 10px; }
+@media (max-width: 768px) { .phase-grid { grid-template-columns: 1fr; } }
+.phase {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 14px 16px;
+  position: relative;
+}
+.phase.p30 { border-top: 3px solid var(--green); }
+.phase.p60 { border-top: 3px solid var(--gold); }
+.phase.p90 { border-top: 3px solid var(--purple); }
+.phase-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 700;
+  margin-bottom: 4px;
+}
+.phase.p30 .phase-num { color: var(--green); }
+.phase.p60 .phase-num { color: var(--gold); }
+.phase.p90 .phase-num { color: var(--purple); }
+.phase-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px; font-weight: 700;
+  letter-spacing: 1.5px; color: var(--muted);
+  margin-bottom: 10px;
+}
+.phase ul { list-style: none; padding: 0; }
+.phase li {
+  font-size: 12.5px; color: var(--ink2);
+  padding: 5px 0 5px 16px;
+  position: relative; line-height: 1.6;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.phase li:last-child { border-bottom: none; }
+.phase li::before {
+  content: '▸';
+  position: absolute; right: 0; top: 5px;
+  color: var(--gold); font-size: 11px;
+}
+/* portfolio mock */
+.mock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 12px; }
+@media (max-width: 768px) { .mock-grid { grid-template-columns: 1fr; } }
+.mock-card {
+  background: linear-gradient(135deg, #1a1d30, #0D0F1A);
+  border: 1px solid var(--gold-border);
+  border-radius: 12px;
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.mock-card .mock-tag {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; font-weight: 700;
+  padding: 3px 9px; border-radius: 3px;
+  background: var(--teal-dim); border: 1px solid var(--teal-border);
+  color: var(--teal); margin-bottom: 8px;
+}
+.mock-card .mock-h {
+  font-size: 18px; font-weight: 800; color: var(--gold);
+  line-height: 1.3; margin-bottom: 8px;
+}
+.mock-card .mock-body {
+  font-size: 13px; color: var(--ink2);
+  line-height: 1.7; margin-bottom: 10px;
+}
+.mock-card .mock-cta {
+  display: inline-block;
+  padding: 6px 14px; border-radius: 20px;
+  background: var(--gold); color: #0D0F1A;
+  font-weight: 800; font-size: 12px;
+}
+.mock-card .mock-meta {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px dashed rgba(201,166,64,0.25);
+  font-size: 11px; color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+}
+/* ai stack */
+.ai-stack { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 768px) { .ai-stack { grid-template-columns: 1fr; } }
+.ai-cat {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-right: 3px solid var(--teal);
+  border-radius: 8px; padding: 12px 14px;
+}
+.ai-cat .cat-h {
+  font-size: 13px; font-weight: 800; color: var(--teal2);
+  margin-bottom: 6px;
+}
+.ai-cat .cat-tools {
+  display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px;
+}
+.ai-cat .tool-chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px; font-weight: 600;
+  padding: 3px 9px; border-radius: 3px;
+  background: var(--teal-dim); border: 1px solid var(--teal-border);
+  color: var(--teal);
+}
+.ai-cat .cat-use {
+  font-size: 11.5px; color: var(--ink2); line-height: 1.6;
+}
+/* salary */
+.salary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 12px 0; }
+@media (max-width: 768px) { .salary-grid { grid-template-columns: 1fr; } }
+.salary-tier {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px; padding: 14px;
+  text-align: center;
+}
+.salary-tier.low { border-top: 3px solid var(--muted); }
+.salary-tier.mid { border-top: 3px solid var(--gold); transform: scale(1.03); }
+.salary-tier.high { border-top: 3px solid var(--teal); }
+.salary-tier .st-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; color: var(--muted);
+  letter-spacing: 1.5px; margin-bottom: 4px;
+}
+.salary-tier .st-amt {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700;
+  margin-bottom: 4px;
+}
+.salary-tier.low .st-amt { color: var(--ink2); }
+.salary-tier.mid .st-amt { color: var(--gold); }
+.salary-tier.high .st-amt { color: var(--teal); }
+.salary-tier .st-desc {
+  font-size: 11px; color: var(--muted); line-height: 1.5;
+}
+/* cheat sheet */
+.cheat-card {
+  background: linear-gradient(135deg, #FFF8E7, #FAF0D8);
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  padding: 22px 26px;
+  color: #1a1a1a;
+  position: relative;
+  margin-top: 14px;
+}
+.cheat-card h3 {
+  color: #6E4F00; font-size: 17px; font-weight: 900;
+  margin-bottom: 12px; padding-bottom: 8px;
+  border-bottom: 2px solid #C9A640;
+  text-align: center;
+}
+.cheat-card .cheat-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px;
+}
+@media (max-width: 768px) { .cheat-card .cheat-grid { grid-template-columns: 1fr; } }
+.cheat-card .cheat-item {
+  font-size: 12.5px; color: #2a2a2a; padding: 4px 0;
+  display: flex; align-items: flex-start; gap: 6px;
+}
+.cheat-card .cheat-item strong { color: #6E4F00; }
+.cheat-card .cheat-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; flex-shrink: 0;
+  border-radius: 50%; background: #C9A640; color: #fff;
+  font-weight: 800; font-size: 10.5px;
+}
+/* checklist */
+.checklist {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px; padding: 14px 18px;
+}
+.checklist .ck-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.05);
+  font-size: 13px; color: var(--ink2);
+}
+.checklist .ck-item:last-child { border-bottom: none; }
+.checklist .ck-box {
+  width: 16px; height: 16px;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+/* highlight critical */
+.critical-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 700;
+  padding: 2px 8px; border-radius: 3px;
+  background: var(--red-dim); border: 1px solid var(--red-border);
+  color: var(--red); margin-right: 6px;
+  font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.5px;
+}
+@media print {
+  .cheat-card { page-break-inside: avoid; break-inside: avoid; }
+  .checklist { page-break-inside: avoid; break-inside: avoid; }
+}
 </style>
 </head>
 <body>
@@ -384,6 +657,20 @@ body {
     <div class="toc-item"><span class="toc-num">08</span> خطة ما قبل المقابلة (24 ساعة)</div>
     <div class="toc-item"><span class="toc-num">09</span> نصائح علم النفس التطبيقي</div>
     <div class="toc-item"><span class="toc-num">10</span> خطة الطوارئ والأسئلة الصعبة</div>
+    <div class="toc-item pro"><span class="toc-num pn">11</span> 🔥 ترقيع الـ CV قبل الإرسال</div>
+    <div class="toc-item pro"><span class="toc-num pn">12</span> 🔥 اقتصاد المحتوى الطبي</div>
+    <div class="toc-item pro"><span class="toc-num pn">13</span> 🔥 Technical Drill — 15 سؤال فني</div>
+    <div class="toc-item pro"><span class="toc-num pn">14</span> 🔥 خطة الـ 30/60/90 يوم</div>
+    <div class="toc-item pro"><span class="toc-num pn">15</span> Portfolio + Mock-ups جاهزة</div>
+    <div class="toc-item pro"><span class="toc-num pn">16</span> AI Tools Stack الطبي الأخلاقي</div>
+    <div class="toc-item pro"><span class="toc-num pn">17</span> Crisis Communication الطبي</div>
+    <div class="toc-item pro"><span class="toc-num pn">18</span> التفاوض على الراتب 2026</div>
+    <div class="toc-item pro"><span class="toc-num pn">19</span> التحضير الرقمي قبل الـ Google Search</div>
+    <div class="toc-item pro"><span class="toc-num pn">20</span> علم النفس المتقدم — أسلحة سرية</div>
+    <div class="toc-item pro"><span class="toc-num pn">21</span> Cheat Sheet + Scripts + Self-Check</div>
+  </div>
+  <div style="margin-top:14px; padding:10px 14px; background: linear-gradient(135deg, rgba(231,76,60,0.08), rgba(201,166,64,0.08)); border:1px dashed rgba(201,166,64,0.4); border-radius:8px; font-size:11.5px; color: var(--gold2); text-align:center;">
+    ⚡ الأقسام <strong style="color:var(--red);">11–21</strong> هي ترقيات <strong>PRO MAX</strong> — تخصصية للمجال الطبي وتسد فجوات الـ CV
   </div>
 </div>
 
@@ -989,79 +1276,329 @@ body {
   </div>
 </div>
 
+
 <!-- ═══════════════════════════════════════════════════════
-     BONUS: ملخص تنفيذي سريع
+     PRO MAX 11: ترقيع الـ CV
 ═══════════════════════════════════════════════════════ -->
-<div class="section">
+<div class="section section-pro">
   <div class="section-header">
-    <div class="section-icon icon-gold">⭐</div>
-    <div class="section-title">ملخص تنفيذي — أهم 10 قواعد ذهبية (احفظها!)</div>
+    <div class="section-icon icon-red">🔧</div>
+    <div class="section-title">١١. ترقيع الـ CV قبل الإرسال — سد الفجوات الحرجة</div>
   </div>
   <div class="section-body">
-    <div class="grid-2">
-      <div class="mini-card">
-        <div class="mc-icon">1️⃣</div>
-        <div class="mc-title">ابحث عن الشركة</div>
-        <div class="mc-desc">تعرّف على صفحاتهم ومنتجاتهم وأسلوبهم قبل المقابلة</div>
+    <div class="warning-box">
+      <h4>🚨 مشكلة حرجة: الـ CV الحالي لا يذكر Photoshop / Canva / Copywriting صراحةً</h4>
+      <p>الإعلان يطلبها بالاسم. إذا أرسلت الـ CV بدون ذكرها = يتم تجاهلك تلقائياً من فلتر الـ ATS أو HR الأولي.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">A</span> المهارات المطلوب إضافتها فوراً في الـ CV</div>
+      <div class="tbl-wrap">
+        <table class="cmp-tbl">
+          <tr><th>المهارة</th><th>الإعلان يطلبها؟</th><th>موجودة بالـ CV الحالي؟</th><th>الإجراء</th></tr>
+          <tr><td>Adobe Photoshop</td><td class="ok">✓ صراحة</td><td class="no">✗ غائبة</td><td>أضف: "Photoshop (Basic–Intermediate)"</td></tr>
+          <tr><td>Canva Pro</td><td class="ok">✓ ضمنياً</td><td class="no">✗ غائبة</td><td>أضف chip جديد</td></tr>
+          <tr><td>Content Writing / Copywriting</td><td class="ok">✓ صراحة</td><td class="no">✗ غائبة</td><td>أضف كـ Competency</td></tr>
+          <tr><td>Content Calendar & Scheduling</td><td class="ok">✓ ضمنياً</td><td class="no">✗ غائبة</td><td>أضف في bullets</td></tr>
+          <tr><td>Meta Business Suite</td><td class="ok">✓ ضمنياً</td><td class="no">✗ غائبة</td><td>أضف chip جديد</td></tr>
+          <tr><td>CapCut / Video Editing</td><td class="ok">✓ TikTok</td><td class="no">✗ غائبة</td><td>أضف chip جديد</td></tr>
+        </table>
       </div>
-      <div class="mini-card">
-        <div class="mc-icon">2️⃣</div>
-        <div class="mc-title">احكِ قصص لا حقائق</div>
-        <div class="mc-desc">بدل "أنا شاطر" — احكِ موقف فيه بداية ومشكلة وحل ونتيجة</div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">B</span> Bridge Statement — جسر الربط بين خبرتك والوظيفة</div>
+      <div class="script-box">
+        <div class="label">SUMMARY المقترح الجديد</div>
+        موظف محتوى رقمي وسوشيال ميديا يجمع بين <strong>خبرة 10 سنوات في التعامل المباشر مع العملاء</strong> وخلفية أكاديمية في <strong>علم النفس</strong>، مما يمنحه فهماً عميقاً لسلوك الجمهور الرقمي ودوافعه. يتقن إدارة منصات Facebook, Instagram, TikTok، وصياغة المحتوى الإبداعي، واستخدام Photoshop وCanva وأدوات AI للتصميم وإنتاج المحتوى البصري. متفرغ تماماً ومستعد للالتزام الكامل.
       </div>
-      <div class="mini-card">
-        <div class="mc-icon">3️⃣</div>
-        <div class="mc-title">استثمر علم النفس</div>
-        <div class="mc-desc">هذه ميزتك التنافسية الأقوى — اذكرها في كل إجابة تقريباً</div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">C</span> Talking Points لتعويض الفجوة شفهياً</div>
+      <ul class="guide-list green">
+        <li>"8 سنوات بمبيعات الهواتف = أفهم الترند، أفهم المحتوى اللي يبيع، أفهم الجمهور التقني"</li>
+        <li>"كل يوم أتعامل مع عملاء = أعرف بالضبط شنو يوقفهم ويخليهم يشترون"</li>
+        <li>"كتابة وصف المنتجات والعروض اليومية = كتابة كابشنات سوشيال ميديا بشكل مختلف"</li>
+        <li>"إدارة بيانات المبيعات بـ Excel = قدرة على قراءة Analytics وتقديم تقارير"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PRO MAX 12: اقتصاد المحتوى الطبي
+═══════════════════════════════════════════════════════ -->
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-red">🏥</div>
+    <div class="section-title">١٢. اقتصاد المحتوى الطبي — قواعد اللعبة المختلفة</div>
+  </div>
+  <div class="section-body">
+    <div class="psych-box">
+      <h4>⚕️ ما هو "المكتب العلمي الطبي" أصلاً؟</h4>
+      <p>المكاتب العلمية الطبية في العراق تعمل كوسيط بين شركات الأدوية العالمية والأطباء/الصيدليات المحلية. وظيفتها الأساسية: <strong>التسويق العلمي</strong> — تعريف الأطباء بالأدوية الجديدة عبر المندوبين + السوشيال ميديا. الجمهور المستهدف غالباً: أطباء + صيادلة + مرضى يبحثون عن معلومات.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">A</span> قواعد ذهبية للمحتوى الطبي (احفظها!)</div>
+      <ul class="guide-list red">
+        <li><strong>لا تشخيص أبداً:</strong> لا تقل "إذا عندك هذه الأعراض فأنت مصاب بـ..." — هذا عمل الطبيب فقط.</li>
+        <li><strong>لا وعود علاجية:</strong> لا تقل "هذا الدواء يشفي 100%" — استخدم "يساعد في" أو "قد يخفف من".</li>
+        <li><strong>مصدر لكل معلومة:</strong> اذكر المصدر العلمي أو أن "المعلومة بإشراف طبي".</li>
+        <li><strong>Disclaimer إجباري:</strong> في كل بوست طبي: "هذا المحتوى تثقيفي ولا يغني عن استشارة الطبيب".</li>
+        <li><strong>لا صور قبل/بعد بدون تحفظ:</strong> خاصة الجراحية — قد تخالف سياسات Meta وتسبب حظر.</li>
+        <li><strong>لا أسماء أدوية Rx بدون إشراف:</strong> الأدوية بوصفة لا تُعلن للجمهور مباشرة.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">B</span> الفرق بين B2B و B2C في المجال الطبي</div>
+      <div class="grid-2">
+        <div class="success-box">
+          <h4>🩺 B2B (للأطباء/الصيادلة)</h4>
+          <p>• لغة علمية دقيقة<br>• دراسات سريرية وأرقام<br>• تصاميم نظيفة بدون ألوان صارخة<br>• Webinars ومؤتمرات طبية<br>• LinkedIn + مجموعات Telegram طبية</p>
+        </div>
+        <div class="success-box">
+          <h4>👥 B2C (للمرضى/الجمهور)</h4>
+          <p>• لغة بسيطة يومية<br>• Infographics وقصص مرضى<br>• تصاميم ملونة وجذابة<br>• Reels تعليمية قصيرة<br>• Facebook + Instagram + TikTok</p>
+        </div>
       </div>
-      <div class="mini-card">
-        <div class="mc-icon">4️⃣</div>
-        <div class="mc-title">كن صادقاً بذكاء</div>
-        <div class="mc-desc">لا تكذب لكن أعد صياغة نقاط الضعف كفرص تطوير</div>
-      </div>
-      <div class="mini-card">
-        <div class="mc-icon">5️⃣</div>
-        <div class="mc-title">جهّز Portfolio</div>
-        <div class="mc-desc">حتى 3-5 نماذج بسيطة أفضل من لا شيء — الأمثلة تتحدث</div>
-      </div>
-      <div class="mini-card">
-        <div class="mc-icon">6️⃣</div>
-        <div class="mc-title">تحكم بلغة جسدك</div>
-        <div class="mc-desc">اجلس مستقيم، تواصل بصري، يدين مفتوحتين، لا هز رجل</div>
-      </div>
-      <div class="mini-card">
-        <div class="mc-icon">7️⃣</div>
-        <div class="mc-title">اقترح أفكار</div>
-        <div class="mc-desc">جهّز 2-3 أفكار محتوى لصفحاتهم — هذا يصدم المُقابِل إيجابياً</div>
-      </div>
-      <div class="mini-card">
-        <div class="mc-icon">8️⃣</div>
-        <div class="mc-title">اطرح أسئلة ذكية</div>
-        <div class="mc-desc">في النهاية اسأل عن الأهداف والتوقعات — لا تسأل عن الإجازات</div>
-      </div>
-      <div class="mini-card">
-        <div class="mc-icon">9️⃣</div>
-        <div class="mc-title">أول 30 ثانية = كل شيء</div>
-        <div class="mc-desc">ابتسامة + مصافحة + جملة واثقة = 50% من نجاح المقابلة</div>
-      </div>
-      <div class="mini-card">
-        <div class="mc-icon">🔟</div>
-        <div class="mc-title">تابع بعد المقابلة</div>
-        <div class="mc-desc">رسالة شكر بعد 24 ساعة تميزك عن 95% من المتقدمين</div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">C</span> Content Pillars المقترحة لشركة طبية</div>
+      <ul class="guide-list teal">
+        <li><strong>تثقيف صحي (40%):</strong> معلومات عن أمراض شائعة، وقاية، نصائح صحية يومية</li>
+        <li><strong>تعريف بالمنتجات (25%):</strong> مميزات الأدوية/الأجهزة بأسلوب علمي مبسط</li>
+        <li><strong>خلف الكواليس (15%):</strong> فريق العمل، المختبر، التعبئة — يبني الثقة</li>
+        <li><strong>شهادات وقصص نجاح (10%):</strong> تجارب أطباء/مرضى (بإذنهم)</li>
+        <li><strong>تفاعلي/ترفيهي (10%):</strong> كويزات طبية، "هل تعلم؟"، أيام صحية عالمية</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PRO MAX 13: Technical Drill
+═══════════════════════════════════════════════════════ -->
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-gold">⚙️</div>
+    <div class="section-title">١٣. Technical Drill — 15 سؤال فني تخصصي مع الإجابات</div>
+  </div>
+  <div class="section-body">
+    <div class="qa-block"><div class="qa-q"><span class="q-icon">ف1</span> ما الفرق بين Reach و Impressions؟</div><div class="qa-a"><strong>Reach</strong> = عدد الأشخاص الفريدين اللي شافوا المحتوى. <strong>Impressions</strong> = عدد المرات اللي ظهر فيها المحتوى (شخص واحد ممكن يشوفه 3 مرات = 1 reach, 3 impressions).</div></div>
+    <div class="qa-block teal"><div class="qa-q"><span class="q-icon">ف2</span> متى تستخدم Carousel vs Reel vs Story؟</div><div class="qa-a"><strong>Carousel:</strong> محتوى تعليمي خطوة بخطوة (مثل: 5 علامات لنقص الحديد). <strong>Reel:</strong> محتوى ترفيهي/ترندي سريع يوصل لجمهور جديد. <strong>Story:</strong> تفاعل يومي سريع مع المتابعين الحاليين (polls, Q&A, خلف الكواليس).</div></div>
+    <div class="qa-block"><div class="qa-q"><span class="q-icon">ف3</span> ما هي Content Pillars وكم تقترح لشركة طبية؟</div><div class="qa-a">أعمدة المحتوى = المواضيع الرئيسية اللي تدور حولها كل منشوراتك. لشركة طبية أقترح 4-5 أعمدة: تثقيف صحي، تعريف منتجات، خلف الكواليس، شهادات عملاء، محتوى تفاعلي.</div></div>
+    <div class="qa-block green"><div class="qa-q"><span class="q-icon">ف4</span> كيف تكتب Hook في أول 3 ثواني؟</div><div class="qa-a">أستخدم: سؤال صادم ("هل تعرف أن 70% من العراقيين عندهم نقص فيتامين D؟")، أو عبارة مضادة للتوقعات ("لا تشرب ماء بعد الأكل!")، أو رقم مفاجئ، أو "Stop scrolling if..." — الهدف: كسر نمط التصفح في أول ثانية.</div></div>
+    <div class="qa-block purple"><div class="qa-q"><span class="q-icon">ف5</span> ما الفرق بين Boosted Post و Campaign في Meta Ads Manager؟</div><div class="qa-a"><strong>Boost</strong> = زر سريع لبوست موجود، خيارات محدودة. <strong>Campaign</strong> = Ads Manager كامل: اختيار هدف (Awareness/Traffic/Conversions)، Audiences تفصيلية، A/B testing، placement control. الحملة أقوى بكثير لكن تحتاج خبرة أكثر.</div></div>
+    <div class="qa-block"><div class="qa-q"><span class="q-icon">ف6</span> أبعاد التصميم لكل منصة؟</div><div class="qa-a">Feed Post: <em>1080x1080</em> (مربع) أو <em>1080x1350</em> (4:5 أفضل). Story/Reel: <em>1080x1920</em> (9:16). Facebook Cover: <em>820x312</em>. LinkedIn Banner: <em>1128x191</em>. TikTok: <em>1080x1920</em>.</div></div>
+    <div class="qa-block teal"><div class="qa-q"><span class="q-icon">ف7</span> ما هو UGC وكيف تشجعه بمجال طبي؟</div><div class="qa-a">User Generated Content = محتوى ينشره العملاء عنك. بالمجال الطبي: نشجع الأطباء يشاركون تجربتهم مع المنتج (بإذنهم)، أو ننشئ hashtag مثل #تجربتي_مع_المبدع، أو نعمل مسابقة "شاركنا سؤالك الصحي".</div></div>
+    <div class="qa-block"><div class="qa-q"><span class="q-icon">ف8</span> كيف تبني Content Calendar؟</div><div class="qa-a">أقسم الشهر لأسابيع، كل أسبوع له theme. أجدول 4-5 بوستات/أسبوع: 2 تثقيفي + 1 منتج + 1 تفاعلي + 1 Story/Reel. أستخدم Google Sheets أو Notion أو Meta Business Suite للجدولة. أراعي المناسبات الصحية (يوم القلب العالمي مثلاً).</div></div>
+    <div class="qa-block green"><div class="qa-q"><span class="q-icon">ف9</span> ما هو Engagement Rate الجيد؟</div><div class="qa-a">بشكل عام: 1-3% ممتاز لصفحة 10K+. للصفحات الطبية: 2-5% يعتبر قوي لأن المحتوى الصحي يحصل على saves كثيرة. الحساب: (Likes + Comments + Shares + Saves) ÷ Followers × 100.</div></div>
+    <div class="qa-block purple"><div class="qa-q"><span class="q-icon">ف10</span> ما هي Meta Business Suite؟</div><div class="qa-a">أداة Meta الرسمية لإدارة Facebook + Instagram من مكان واحد: جدولة المنشورات، الرد على الرسائل، متابعة Insights، إدارة الإعلانات. مجانية وأساسية لأي Social Media Manager محترف.</div></div>
+    <div class="qa-block"><div class="qa-q"><span class="q-icon">ف11</span> كيف تختار الـ Hashtags الصحيحة؟</div><div class="qa-a">أمزج بين 3 أنواع: كبيرة (#صحة 1M+) للـ reach، متوسطة (#صحة_العراق 10K-100K) للتنافس، وصغيرة خاصة (#المبدع_العلمي) للبراند. 15-20 hashtag لإنستغرام، 3-5 لفيسبوك، 3-4 لتيك توك.</div></div>
+    <div class="qa-block teal"><div class="qa-q"><span class="q-icon">ف12</span> ما أفضل أوقات النشر في العراق؟</div><div class="qa-a">بشكل عام: 8-10 صباحاً (بداية يوم العمل) و 8-11 مساءً (وقت الراحة). الجمعة: طوال اليوم. لكن الأفضل: تفحص Insights الخاصة بصفحتك — كل جمهور مختلف.</div></div>
+    <div class="qa-block"><div class="qa-q"><span class="q-icon">ف13</span> كيف تكتب CTA فعال؟</div><div class="qa-a">Call To Action = الجملة اللي تخلي القارئ يتحرك. أمثلة طبية: "احفظ البوست للرجوع له" (يزيد saves)، "تاغ شخص يحتاج هالمعلومة" (يزيد reach)، "اكتب سؤالك بالكومنتات" (يزيد engagement).</div></div>
+    <div class="qa-block green"><div class="qa-q"><span class="q-icon">ف14</span> ما الفرق بين Organic و Paid reach؟</div><div class="qa-a"><strong>Organic:</strong> وصول طبيعي بدون دفع (خوارزمية + hashtags + shares). <strong>Paid:</strong> وصول مدفوع (إعلانات). حالياً Organic reach لفيسبوك ~2-5% فقط من المتابعين — لذلك المزج بينهم ضروري.</div></div>
+    <div class="qa-block purple"><div class="qa-q"><span class="q-icon">ف15</span> ما هو A/B Testing وكيف تطبقه؟</div><div class="qa-a">تجربة نسختين من نفس المحتوى بتغيير عنصر واحد (عنوان مختلف، صورة مختلفة، CTA مختلف) ومقارنة الأداء. مثال: نفس البوست بعنوانين مختلفين — أنشرهم بأوقات متشابهة وأشوف أيهما حصل تفاعل أكبر.</div></div>
+  </div>
+</div>
+
+
+<!-- PRO MAX 14: خطة 30/60/90 -->
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-green">📊</div>
+    <div class="section-title">١٤. خطة الـ 30/60/90 يوم — جوابك على "شنو راح تسوي أول شهر؟"</div>
+  </div>
+  <div class="section-body">
+    <div class="phase-grid">
+      <div class="phase p30"><div class="phase-num">30</div><div class="phase-label">DAYS — LEARN</div><ul><li>Audit كامل لصفحاتهم الحالية (المتابعين، التفاعل، نوع المحتوى)</li><li>تحليل 3-5 منافسين طبيين في السوق العراقي</li><li>لقاءات مع الفريق الطبي لفهم المنتجات والجمهور</li><li>بناء Brand Voice Guide مبدئي</li><li>إنشاء Content Calendar أول شهر</li></ul></div>
+      <div class="phase p60"><div class="phase-num">60</div><div class="phase-label">DAYS — BUILD</div><ul><li>تطوير 5 Content Pillars ثابتة</li><li>إنشاء Template Library (10+ قوالب تصميم)</li><li>بدء نشر منتظم: 5 بوستات/أسبوع + Stories يومية</li><li>إطلاق أول حملة Paid صغيرة (A/B test)</li><li>تقرير أداء أول شهر مع توصيات</li></ul></div>
+      <div class="phase p90"><div class="phase-num">90</div><div class="phase-label">DAYS — GROW</div><ul><li>هدف: نمو المتابعين 20-30%</li><li>هدف: رفع Engagement Rate إلى 3%+</li><li>تقديم تقرير شامل 3 شهور: ما نجح + ما يحتاج تعديل</li><li>اقتراح استراتيجية الـ 6 شهور القادمة</li><li>بناء UGC Pipeline + تعاونات مع أطباء مؤثرين</li></ul></div>
+    </div>
+    <div class="script-box" style="margin-top:14px;">
+      <div class="label">SCRIPT حرفي للمقابلة</div>
+      "إذا تم توظيفي، أول 30 يوم راح أركز على الفهم — أدرس صفحاتكم والمنافسين والمنتجات. ثاني 30 يوم أبني: قوالب، أعمدة محتوى، وأبدأ النشر المنتظم. ثالث 30 يوم أقيس النتائج وأقدم لكم تقرير فيه ما نجح وما يحتاج تعديل مع خطة الـ 6 شهور."
+    </div>
+  </div>
+</div>
+
+
+<!-- PRO MAX 15-21 + Footer -->
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-teal">🎨</div>
+    <div class="section-title">١٥. Portfolio + Mock-ups — اصدمهم بعمل جاهز لشركتهم</div>
+  </div>
+  <div class="section-body">
+    <div class="card"><div class="card-title"><span class="num">A</span> الحد الأدنى المطلوب للـ Portfolio</div>
+      <ul class="guide-list teal"><li>5 بوستات تصميم (Canva) — بأبعاد 1080x1080</li><li>1 Carousel تعليمي (5-7 slides)</li><li>1 Reel concept مكتوب (Script + Shot list)</li><li>1 Story sequence (3-5 frames)</li><li>عرض على هاتفك + PDF احتياطي على Google Drive</li></ul>
+    </div>
+    <div class="card"><div class="card-title"><span class="num">B</span> Mock-up لمكتب المبدع العلمي — جهزه قبل المقابلة!</div>
+      <div class="mock-grid">
+        <div class="mock-card"><div class="mock-tag">CAROUSEL</div><div class="mock-h">٥ علامات لنقص فيتامين D</div><div class="mock-body">Slide 1: Hook بسؤال "تحس بتعب دائم؟"<br>Slides 2-5: العلامات بتصميم نظيف<br>Slide 6: CTA "احفظ البوست + استشر طبيبك"</div><div class="mock-meta">Platform: Instagram | Type: Educational | Pillar: تثقيف صحي</div></div>
+        <div class="mock-card"><div class="mock-tag">REEL SCRIPT</div><div class="mock-h">٣ أخطاء بتناول الدواء</div><div class="mock-body">Hook (1s): "توقف! هل تاخذ الدواء صح؟"<br>Content (12s): 3 أخطاء شائعة بتقنية عد تنازلي<br>CTA (2s): "شاركها لشخص يحتاجها"</div><div class="mock-meta">Platform: TikTok + Reels | Duration: 15s | Pillar: تثقيف</div></div>
       </div>
     </div>
   </div>
 </div>
 
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-teal">🤖</div>
+    <div class="section-title">١٦. AI Tools Stack — أدواتك بالاسم + الاستخدام الأخلاقي طبياً</div>
+  </div>
+  <div class="section-body">
+    <div class="ai-stack">
+      <div class="ai-cat"><div class="cat-h">كتابة النصوص</div><div class="cat-tools"><span class="tool-chip">ChatGPT</span><span class="tool-chip">Claude</span><span class="tool-chip">Gemini</span></div><div class="cat-use">كتابة مسودات الكابشن، brainstorming أفكار، تلخيص مقالات طبية بلغة بسيطة</div></div>
+      <div class="ai-cat"><div class="cat-h">تصميم الصور</div><div class="cat-tools"><span class="tool-chip">Canva AI</span><span class="tool-chip">Adobe Firefly</span><span class="tool-chip">Midjourney</span></div><div class="cat-use">إنشاء صور بصرية للبوستات، خلفيات، عناصر تصميم مخصصة</div></div>
+      <div class="ai-cat"><div class="cat-h">فيديو وتحريك</div><div class="cat-tools"><span class="tool-chip">CapCut</span><span class="tool-chip">Runway</span><span class="tool-chip">HeyGen</span></div><div class="cat-use">تعديل Reels، إضافة subtitles تلقائياً، motion graphics بسيطة</div></div>
+      <div class="ai-cat"><div class="cat-h">بحث طبي</div><div class="cat-tools"><span class="tool-chip">Perplexity</span><span class="tool-chip">Google Scholar</span><span class="tool-chip">PubMed</span></div><div class="cat-use">التحقق من المعلومات الطبية قبل النشر — لا تنشر بدون مصدر!</div></div>
+    </div>
+    <div class="warning-box" style="margin-top:14px;">
+      <h4>⚠️ قواعد أخلاقية لاستخدام AI في المحتوى الطبي</h4>
+      <p>• لا تنشر معلومة طبية من AI بدون مراجعة من طبيب/صيدلي<br>• لا تختلق إحصائيات أو دراسات — تحقق من كل رقم<br>• لا تستخدم صور AI لمرضى/أطباء حقيقيين (مشكلة أخلاقية وقانونية)<br>• اذكر "بإشراف طبي" أو "المصدر: منظمة الصحة العالمية" — المصداقية أولاً</p>
+    </div>
+  </div>
+</div>
+
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-red">🚑</div>
+    <div class="section-title">١٧. Crisis Communication الطبي — 5 سيناريوهات حقيقية</div>
+  </div>
+  <div class="section-body">
+    <div class="card"><div class="card-title"><span class="num">1</span> شخص يعلق: "هذا الدواء ضرّني / قتل قريبي"</div><ul class="guide-list red"><li>لا تحذف. لا تعتذر (= اعتراف بمسؤولية قانونية). لا تتجاهل.</li><li>رد: "نتفهم قلقك ونأسف لما تمر به. صحة المرضى أولويتنا. نرجو التواصل معنا على الخاص لمساعدتك."</li><li>انقل للخاص فوراً + أبلغ المدير/الفريق الطبي.</li></ul></div>
+    <div class="card"><div class="card-title"><span class="num">2</span> شخص يطلب استشارة طبية بالكومنتات</div><ul class="guide-list teal"><li>رد: "شكراً على ثقتك! لكن لا نستطيع تقديم استشارة طبية هنا — كل حالة مختلفة. ننصحك بزيارة طبيبك المختص."</li><li>أضف: "يمكنك التواصل معنا على الخاص لنوجهك لأقرب طبيب/صيدلية."</li></ul></div>
+    <div class="card"><div class="card-title"><span class="num">3</span> منافس ينظم حملة سوداء ضد منتجكم</div><ul class="guide-list green"><li>لا ترد بالمثل. لا تذكر اسمه. لا تدخل حرب كومنتات.</li><li>استراتيجية: زيادة المحتوى الإيجابي + شهادات العملاء + اظهار الجودة بالأفعال.</li><li>إذا كان تشويه سمعة واضح: وثّق الأدلة + أبلغ الإدارة القانونية.</li></ul></div>
+    <div class="card"><div class="card-title"><span class="num">4</span> خطأ بمعلومة طبية منشورة</div><ul class="guide-list purple"><li>احذف البوست فوراً (هنا الحذف واجب لأنه محتوى طبي خاطئ).</li><li>انشر توضيح: "نعتذر — تم نشر معلومة غير دقيقة بالخطأ. الصحيح هو:..."</li><li>الشفافية = احترام. محاولة التغطية = فقدان الثقة للأبد.</li></ul></div>
+    <div class="card"><div class="card-title"><span class="num">5</span> Meta يحظر بوست أو يرفض إعلان طبي</div><ul class="guide-list"><li>سبب شائع: ذكر اسم مرض + وعد علاجي = يخالف سياسات Meta الطبية.</li><li>الحل: أعد صياغة بدون ذكر أسماء أمراض مباشرة، استخدم "صحة عامة" بدل "علاج".</li><li>استأنف القرار عبر Meta Support إذا كان الحظر غير مبرر.</li></ul></div>
+  </div>
+</div>
+
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-gold">💰</div>
+    <div class="section-title">١٨. التفاوض على الراتب — استراتيجية 2026 بأرقام</div>
+  </div>
+  <div class="section-body">
+    <div class="salary-grid">
+      <div class="salary-tier low"><div class="st-label">ENTRY LEVEL</div><div class="st-amt">500-700K IQD</div><div class="st-desc">مبتدئ بدون خبرة<br>شركة صغيرة</div></div>
+      <div class="salary-tier mid"><div class="st-label">YOUR TARGET</div><div class="st-amt">750K-1M IQD</div><div class="st-desc">خبرة + تعليم جامعي<br>شركة متوسطة-كبيرة</div></div>
+      <div class="salary-tier high"><div class="st-label">SENIOR RANGE</div><div class="st-amt">1-1.5M+ IQD</div><div class="st-desc">3+ سنوات خبرة مثبتة<br>إدارة فريق</div></div>
+    </div>
+    <div class="card"><div class="card-title"><span class="num">!</span> استراتيجية التفاوض الذكية</div>
+      <ul class="guide-list green">
+        <li><strong>Anchor High:</strong> إذا سألوك أولاً، قل range أعلى قليلاً: "بناءً على خبرتي ومتطلبات الوظيفة، أتوقع بين 800K و 1M" — سينزلون من فوق وليس من تحت.</li>
+        <li><strong>اسأل عن الحزمة الكاملة:</strong> "بالإضافة للراتب، هل تشمل الحزمة: تأمين صحي؟ بونس على KPIs؟ أدوات عمل (لابتوب/اشتراكات)؟"</li>
+        <li><strong>اربط بالقيمة:</strong> "أنا واثق أن النتائج اللي راح أحققها ستبرر الاستثمار — خلال 3 شهور راح تشوفون الفرق."</li>
+        <li><strong>لا تقبل أول عرض:</strong> حتى لو مناسب، قل "أقدر أفكر بالموضوع يومين؟" — هذا يُظهر أنك محترف وليس محتاج.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-orange">🔍</div>
+    <div class="section-title">١٩. التحضير الرقمي — قبل ما يقوقلون اسمك</div>
+  </div>
+  <div class="section-body">
+    <div class="card"><div class="card-title"><span class="num">A</span> تنظيف وتحسين حساباتك</div>
+      <ul class="guide-list"><li><strong>Facebook:</strong> اجعل الحساب الشخصي Private أو نظفه من أي محتوى محرج/سياسي/مثير للجدل</li><li><strong>Instagram:</strong> حوّله لـ Professional Account + أضف 5-9 بوستات "portfolio" نظيفة</li><li><strong>LinkedIn:</strong> أنشئ حساب (أو حدّثه): صورة احترافية + Headline = "Social Media Specialist | BSc Psychology | Content Creator"</li><li><strong>Google Results:</strong> جوجل اسمك + شوف النتيجة. إذا في شيء سلبي = حاول إزالته أو دفنه بمحتوى إيجابي</li></ul>
+    </div>
+    <div class="card"><div class="card-title"><span class="num">B</span> جواب جاهز لـ "نقدر نشوف صفحاتك؟"</div>
+      <div class="script-box">
+        <div class="label">SCRIPT</div>
+        "بالتأكيد! عندي حساب إنستغرام فيه بعض النماذج من أعمالي [أريهم على هاتفك]. وأيضاً جهزت 3 Mock-ups مصممة خصيصاً لمكتب المبدع العلمي أقدر أعرضها عليكم الآن [أخرج الهاتف أو الورقة]."
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-purple">🧬</div>
+    <div class="section-title">٢٠. علم النفس المتقدم — أسلحة سرية إضافية</div>
+  </div>
+  <div class="section-body">
+    <div class="grid-3">
+      <div class="mini-card"><div class="mc-icon">🎯</div><div class="mc-title">Cold Reading</div><div class="mc-desc">اقرأ شخصية المُقابِل بأول 5 دقائق: هل هو Analytical (يحب أرقام)؟ Driver (يريد نتائج سريعة)؟ Expressive (يحب القصص)؟ عدّل أسلوبك حسب نوعه.</div></div>
+      <div class="mini-card"><div class="mc-icon">🔮</div><div class="mc-title">Future Pacing</div><div class="mc-desc">"تخيل بعد 3 شهور صفحاتكم نمت 40% بمحتوى أنا صنعته..." — تزرع صورة مستقبلية في عقله اللاواعي فيبدأ يراك كجزء من الفريق.</div></div>
+      <div class="mini-card"><div class="mc-icon">⚠️</div><div class="mc-title">Loss Aversion</div><div class="mc-desc">بدل "ستكسبون إذا اخترتموني" → قل "كل يوم بدون استراتيجية محتوى = فرص ضائعة ومنافسين يسبقونكم" — الخوف من الخسارة أقوى 2x من الرغبة بالربح.</div></div>
+    </div>
+    <div class="card" style="margin-top:14px;"><div class="card-title"><span class="num">PRO</span> أسئلة ذكية متخصصة تطرحها أنت</div>
+      <ul class="guide-list purple">
+        <li>"ما هي Content Pillars الحالية للصفحة؟ — أريد أفهم الاستراتيجية الحالية"</li>
+        <li>"هل الجمهور المستهدف أطباء، صيادلة، أو مرضى؟ — لكل واحد أسلوب مختلف"</li>
+        <li>"هل عندكم Brand Voice Guidelines موثقة؟ — إذا لا، أقدر أبنيها"</li>
+        <li>"ما هي KPIs اللي تقيمون بها نجاح موظف السوشيال ميديا بأول 6 شهور؟"</li>
+        <li>"هل هناك Compliance Officer يراجع المحتوى الطبي قبل النشر؟"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section section-pro">
+  <div class="section-header">
+    <div class="section-icon icon-gold">📋</div>
+    <div class="section-title">٢١. Cheat Sheet + Scripts + Self-Check List — للطباعة والحفظ</div>
+  </div>
+  <div class="section-body">
+    <div class="cheat-card">
+      <h3>بطاقة الجيب — أهم 12 نقطة (اطبعها واحملها معك)</h3>
+      <div class="cheat-grid">
+        <div class="cheat-item"><span class="cheat-num">1</span> <span>ابتسامة + مصافحة + "أشكركم على إتاحة هذه الفرصة"</span></div>
+        <div class="cheat-item"><span class="cheat-num">2</span> <span>ابدأ بعلم النفس + سلوك المستهلك = ميزتك الفريدة</span></div>
+        <div class="cheat-item"><span class="cheat-num">3</span> <span>اذكر أسماء أدوات: Canva, Meta Suite, Insights, CapCut</span></div>
+        <div class="cheat-item"><span class="cheat-num">4</span> <span>استخدم STAR: موقف → مهمة → فعل → نتيجة</span></div>
+        <div class="cheat-item"><span class="cheat-num">5</span> <span>Content Pillars: تثقيف 40% + منتج 25% + كواليس 15%</span></div>
+        <div class="cheat-item"><span class="cheat-num">6</span> <span>خطة 30/60/90: فهم → بناء → نمو</span></div>
+        <div class="cheat-item"><span class="cheat-num">7</span> <span>KPIs: Engagement Rate + Saves + Reach + Growth</span></div>
+        <div class="cheat-item"><span class="cheat-num">8</span> <span>أخلاقيات: لا تشخيص، لا وعود، Disclaimer دائماً</span></div>
+        <div class="cheat-item"><span class="cheat-num">9</span> <span>أعرض Mock-ups جاهزة لمكتبهم = صدمة إيجابية</span></div>
+        <div class="cheat-item"><span class="cheat-num">10</span> <span>اسأل: "ما هي أهداف الـ 6 شهور القادمة؟"</span></div>
+        <div class="cheat-item"><span class="cheat-num">11</span> <span>اختم: "أنا مستعد أبدأ فوراً وأثبت النتائج بأول شهر"</span></div>
+        <div class="cheat-item"><span class="cheat-num">12</span> <span>بعد 24 ساعة: رسالة شكر قصيرة عبر واتساب</span></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;"><div class="card-title"><span class="num">SCRIPT</span> الجملة الافتتاحية (احفظها حرفياً)</div>
+      <div class="script-box">"أهلاً، أنا حسين علي. أشكركم على إتاحة هذه الفرصة. أنا خريج علم نفس ولدي خبرة 10 سنوات في التعامل مع العملاء والمحتوى الرقمي — وأعتقد أن هذا المزيج بالضبط هو اللي يحتاجه منصب السوشيال ميديا بشركة طبية."</div>
+    </div>
+    <div class="card"><div class="card-title"><span class="num">SCRIPT</span> الجملة الختامية (احفظها حرفياً)</div>
+      <div class="script-box">"شكراً جزيلاً على وقتكم. أنا متحمس فعلاً لهذه الفرصة وواثق أني أقدر أحقق نتائج ملموسة بأول 90 يوم. متى ممكن أعرف قراركم؟"</div>
+    </div>
+
+    <div class="card" style="margin-top:14px;"><div class="card-title"><span class="num">✅</span> Self-Check List — قبل الانطلاق (15 نقطة)</div>
+      <div class="checklist">
+        <div class="ck-item"><div class="ck-box"></div> CV مطبوع نسختين</div>
+        <div class="ck-item"><div class="ck-box"></div> Portfolio جاهز على الهاتف (5+ أعمال)</div>
+        <div class="ck-item"><div class="ck-box"></div> Mock-ups لمكتب المبدع العلمي (2-3)</div>
+        <div class="ck-item"><div class="ck-box"></div> هاتف مشحون 100%</div>
+        <div class="ck-item"><div class="ck-box"></div> ملابس رسمية نظيفة مكوية</div>
+        <div class="ck-item"><div class="ck-box"></div> قلم + دفتر صغير</div>
+        <div class="ck-item"><div class="ck-box"></div> معلومات عن الشركة محفوظة</div>
+        <div class="ck-item"><div class="ck-box"></div> 3 أفكار محتوى مكتوبة</div>
+        <div class="ck-item"><div class="ck-box"></div> إجابات الأسئلة الـ 12 متدرب عليها</div>
+        <div class="ck-item"><div class="ck-box"></div> خطة 30/60/90 محفوظة</div>
+        <div class="ck-item"><div class="ck-box"></div> بطاقة الجيب مطبوعة</div>
+        <div class="ck-item"><div class="ck-box"></div> حسابات السوشيال نظيفة</div>
+        <div class="ck-item"><div class="ck-box"></div> الوصول قبل 15 دقيقة</div>
+        <div class="ck-item"><div class="ck-box"></div> Power Pose + تنفس 4-7-8</div>
+        <div class="ck-item"><div class="ck-box"></div> هاتف على الصامت</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
 <!-- FOOTER -->
 <div class="guide-footer">
-  <div class="brand">Hussein Ali — Interview Mastery Guide</div>
-  <p>دليل مُعد بأسلوب احترافي يجمع بين علم النفس التطبيقي وخبرة الموارد البشرية واستراتيجيات السوشيال ميديا</p>
-  <p style="margin-top: 8px; color: var(--gold);">بالتوفيق يا حسين 🌟 — أنت أقوى مما تعتقد</p>
+  <div class="brand">Hussein Ali — Interview Mastery Guide | PRO MAX Edition</div>
+  <p>دليل مُعد بأسلوب احترافي يجمع بين علم النفس التطبيقي وخبرة الموارد البشرية واستراتيجيات السوشيال ميديا الطبية</p>
+  <p style="margin-top: 8px; color: var(--gold);">بالتوفيق يا حسين 🌟 — أنت أقوى مما تعتقد وأجهز مما يتوقعون</p>
 </div>
 
 </div>
 </body>
 </html>
-
-
