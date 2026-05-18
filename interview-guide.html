@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل المقابلة الاحترافي — حسين علي | وظيفة سوشيال ميديا</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0F1119;
+  --bg2: #161822;
+  --bg3: #1C1F2E;
+  --bg4: #232738;
+  --gold: #C9A640;
+  --gold2: #DEC070;
+  --gold-dim: rgba(201,166,64,0.12);
+  --gold-border: rgba(201,166,64,0.30);
+  --teal: #27A69A;
+  --teal2: #5CD4CB;
+  --teal-dim: rgba(39,166,154,0.12);
+  --teal-border: rgba(39,166,154,0.30);
+  --red: #E74C3C;
+  --red-dim: rgba(231,76,60,0.10);
+  --red-border: rgba(231,76,60,0.25);
+  --green: #27AE60;
+  --green-dim: rgba(39,174,96,0.10);
+  --green-border: rgba(39,174,96,0.25);
+  --purple: #9B59B6;
+  --purple-dim: rgba(155,89,182,0.10);
+  --purple-border: rgba(155,89,182,0.25);
+  --orange: #E67E22;
+  --orange-dim: rgba(230,126,34,0.10);
+  --orange-border: rgba(230,126,34,0.25);
+  --ink: #E8E4DC;
+  --ink2: #C8C3B8;
+  --muted: #7A7E96;
+  --card-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.8;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0D0F1A 0%, #1a1d30 50%, #0D0F1A 100%);
+  border: 1px solid var(--gold-border);
+  border-radius: 16px;
+  padding: 50px 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(201,166,64,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; left: -80px;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, rgba(39,166,154,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero h1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 8px;
+  text-shadow: 0 0 30px rgba(201,166,64,0.3);
+}
+.hero .subtitle {
+  font-size: 16px;
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.hero .company {
+  font-size: 14px;
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+}
+.hero .badge-row {
+  display: flex; justify-content: center; gap: 8px; margin-top: 18px; flex-wrap: wrap;
+}
+.hero .badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600;
+  padding: 5px 14px; border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+.badge-gold { background: var(--gold-dim); border: 1px solid var(--gold-border); color: var(--gold); }
+.badge-teal { background: var(--teal-dim); border: 1px solid var(--teal-border); color: var(--teal); }
+.badge-purple { background: var(--purple-dim); border: 1px solid var(--purple-border); color: var(--purple); }
+
+/* SECTIONS */
+.section {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+.section-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: var(--bg3);
+}
+.section-icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.icon-gold { background: var(--gold-dim); border: 1px solid var(--gold-border); }
+.icon-teal { background: var(--teal-dim); border: 1px solid var(--teal-border); }
+.icon-red { background: var(--red-dim); border: 1px solid var(--red-border); }
+.icon-green { background: var(--green-dim); border: 1px solid var(--green-border); }
+.icon-purple { background: var(--purple-dim); border: 1px solid var(--purple-border); }
+.icon-orange { background: var(--orange-dim); border: 1px solid var(--orange-border); }
+
+.section-title {
+  font-size: 18px; font-weight: 800; color: var(--ink);
+}
+.section-body {
+  padding: 24px;
+}
+
+/* CARDS */
+.card {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+}
+.card:last-child { margin-bottom: 0; }
+.card-title {
+  font-size: 15px; font-weight: 700; margin-bottom: 8px;
+  display: flex; align-items: center; gap: 8px;
+}
+.card-title .num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 4px;
+  background: var(--gold-dim); border: 1px solid var(--gold-border); color: var(--gold);
+}
+
+/* LISTS */
+.guide-list { list-style: none; padding: 0; }
+.guide-list li {
+  position: relative;
+  padding: 8px 0 8px 22px;
+  font-size: 14px;
+  color: var(--ink2);
+  line-height: 1.7;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.guide-list li:last-child { border-bottom: none; }
+.guide-list li::before {
+  content: '';
+  position: absolute;
+  right: 0; top: 16px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.guide-list.teal li::before { background: var(--teal); }
+.guide-list.red li::before { background: var(--red); }
+.guide-list.green li::before { background: var(--green); }
+.guide-list.purple li::before { background: var(--purple); }
+
+/* QA */
+.qa-block {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border-right: 3px solid var(--gold);
+}
+.qa-block.teal { border-right-color: var(--teal); }
+.qa-block.red { border-right-color: var(--red); }
+.qa-block.green { border-right-color: var(--green); }
+.qa-block.purple { border-right-color: var(--purple); }
+.qa-q {
+  font-size: 14px; font-weight: 700; color: var(--gold);
+  margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;
+}
+.qa-q .q-icon {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 700;
+  background: var(--gold-dim); border: 1px solid var(--gold-border);
+  color: var(--gold);
+  padding: 2px 6px; border-radius: 3px;
+  flex-shrink: 0; margin-top: 2px;
+}
+.qa-a {
+  font-size: 13.5px; color: var(--ink2); line-height: 1.85;
+  padding-right: 30px;
+}
+.qa-a strong { color: var(--teal); font-weight: 700; }
+.qa-a em { color: var(--gold2); font-style: normal; font-weight: 600; }
+.qa-tip {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: var(--green-dim);
+  border: 1px solid var(--green-border);
+  border-radius: 8px;
+  font-size: 12px; color: var(--green); font-weight: 600;
+}
+
+/* WARNING BOX */
+.warning-box {
+  background: var(--red-dim);
+  border: 1px solid var(--red-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.warning-box h4 {
+  color: var(--red); font-size: 14px; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 6px;
+}
+.warning-box p { font-size: 13px; color: var(--ink2); line-height: 1.7; }
+
+/* SUCCESS BOX */
+.success-box {
+  background: var(--green-dim);
+  border: 1px solid var(--green-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.success-box h4 {
+  color: var(--green); font-size: 14px; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 6px;
+}
+.success-box p { font-size: 13px; color: var(--ink2); line-height: 1.7; }
+
+/* PSYCH BOX */
+.psych-box {
+  background: var(--purple-dim);
+  border: 1px solid var(--purple-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.psych-box h4 {
+  color: var(--purple); font-size: 14px; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 6px;
+}
+.psych-box p { font-size: 13px; color: var(--ink2); line-height: 1.7; }
+
+/* TIMELINE */
+.timeline { position: relative; padding-right: 20px; }
+.timeline::before {
+  content: '';
+  position: absolute; right: 6px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--gold), var(--teal), var(--gold));
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative; padding: 12px 24px 12px 0; margin-bottom: 8px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute; right: -14px; top: 18px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid var(--bg2);
+}
+.timeline-item .time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; color: var(--muted); margin-bottom: 4px;
+}
+.timeline-item .desc {
+  font-size: 13.5px; color: var(--ink2); line-height: 1.6;
+}
+
+/* GRID */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* MINI CARD */
+.mini-card {
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 14px 16px;
+  text-align: center;
+}
+.mini-card .mc-icon { font-size: 22px; margin-bottom: 6px; }
+.mini-card .mc-title { font-size: 12px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.mini-card .mc-desc { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+/* TABLE OF CONTENTS */
+.toc {
+  background: var(--bg3);
+  border: 1px solid var(--gold-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 30px;
+}
+.toc h3 { font-size: 16px; color: var(--gold); margin-bottom: 12px; }
+.toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.toc-item {
+  font-size: 12.5px; color: var(--ink2);
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--bg4);
+  border: 1px solid rgba(255,255,255,0.04);
+  display: flex; align-items: center; gap: 6px;
+}
+.toc-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 700;
+  color: var(--gold);
+  background: var(--gold-dim);
+  padding: 2px 6px; border-radius: 3px;
+}
+
+/* FOOTER */
+.guide-footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 20px;
+}
+.guide-footer p { font-size: 12px; color: var(--muted); }
+.guide-footer .brand { color: var(--gold); font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+  <h1>دليل المقابلة الاحترافي المتكامل</h1>
+  <div class="subtitle">وظيفة: موظف/ـة سوشيال ميديا — قسم الإعلام</div>
+  <div class="company">مكتب المبدع العلمي | شركة طبية مرموقة — بغداد</div>
+  <div class="badge-row">
+    <span class="badge badge-gold">علم النفس + HR</span>
+    <span class="badge badge-teal">استراتيجيات المقابلة</span>
+    <span class="badge badge-purple">تحليل نفسي للمُقابِل</span>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <h3>فهرس الدليل الشامل</h3>
+  <div class="toc-grid">
+    <div class="toc-item"><span class="toc-num">01</span> تحليل الإعلان والمتطلبات</div>
+    <div class="toc-item"><span class="toc-num">02</span> تحليل نقاط القوة والفجوات</div>
+    <div class="toc-item"><span class="toc-num">03</span> الأخطاء الشائعة القاتلة</div>
+    <div class="toc-item"><span class="toc-num">04</span> التحضير النفسي والذهني</div>
+    <div class="toc-item"><span class="toc-num">05</span> أسئلة المقابلة المتوقعة + الأجوبة</div>
+    <div class="toc-item"><span class="toc-num">06</span> استراتيجية البيع الذاتي</div>
+    <div class="toc-item"><span class="toc-num">07</span> لغة الجسد والانطباع الأول</div>
+    <div class="toc-item"><span class="toc-num">08</span> خطة ما قبل المقابلة (24 ساعة)</div>
+    <div class="toc-item"><span class="toc-num">09</span> نصائح علم النفس التطبيقي</div>
+    <div class="toc-item"><span class="toc-num">10</span> خطة الطوارئ والأسئلة الصعبة</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 1: تحليل الإعلان والمتطلبات
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-gold">📋</div>
+    <div class="section-title">١. تحليل الإعلان الوظيفي — فك شيفرة ما يريده صاحب العمل</div>
+  </div>
+  <div class="section-body">
+    <div class="card">
+      <div class="card-title"><span class="num">A</span> المتطلبات الصريحة في الإعلان</div>
+      <ul class="guide-list">
+        <li><strong>إدارة صفحات التواصل الاجتماعي:</strong> Facebook – Instagram – TikTok وغيرها. هذا يعني أنهم يريدون شخص يفهم خوارزميات كل منصة، أوقات النشر المثالية، وإدارة التفاعل مع الجمهور يومياً.</li>
+        <li><strong>مهارة عالية في الكتابة والتحرير وصياغة المحتوى:</strong> يريدون كاتب محتوى يستطيع كتابة بوستات طبية بلغة مبسطة وجذابة، كتابة كابشن احترافي، وصياغة محتوى تسويقي يراعي الجمهور الطبي.</li>
+        <li><strong>إجادة الفوتوشوب للتصميم:</strong> تصميم بوستات السوشيال ميديا، ستوريز، بانرات إعلانية، وربما مواد تسويقية مطبوعة.</li>
+        <li><strong>التفرغ التام للعمل:</strong> هذا يعني أنهم لا يريدون شخص لديه عمل آخر أو دوام جزئي — يريدون التزام كامل.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="num">B</span> المتطلبات الخفية (ما بين السطور)</div>
+      <ul class="guide-list teal">
+        <li><strong>فهم المجال الطبي:</strong> بما أنها شركة طبية، يتوقعون أنك تستطيع فهم المصطلحات الطبية الأساسية وتبسيطها للجمهور.</li>
+        <li><strong>الإبداع والابتكار:</strong> كلمة "المبدع" في اسم الشركة تدل على تقديرهم للإبداع — سيبحثون عن أفكار جديدة منك.</li>
+        <li><strong>العمل تحت ضغط:</strong> السوشيال ميديا تتطلب سرعة استجابة وقدرة على إنتاج محتوى يومي باستمرار.</li>
+        <li><strong>فهم التحليلات والـ Insights:</strong> لن تدير صفحات فقط، بل ستحتاج لقراءة الأرقام وتقديم تقارير أداء.</li>
+        <li><strong>المصداقية والأمانة:</strong> في المجال الطبي، المحتوى يجب أن يكون دقيق علمياً — مسؤولية كبيرة.</li>
+      </ul>
+    </div>
+    <div class="psych-box">
+      <h4>🧠 البعد النفسي — ماذا يبحث عنه المُقابِل فعلاً؟</h4>
+      <p>المُقابِل في شركة طبية يبحث عن <strong>الثقة + المصداقية + القدرة على التعلم</strong>. هو يعرف أن معظم المتقدمين ليسوا أطباء، لكنه يريد شخص يُظهر أنه قادر على فهم المحتوى الطبي وتبسيطه بإبداع. أنت بخلفيتك في علم النفس لديك ميزة تنافسية كبيرة هنا — تفهم السلوك البشري وتعرف كيف تصيغ رسائل تؤثر في الناس.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 2: نقاط القوة والفجوات
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-green">⚡</div>
+    <div class="section-title">٢. تحليل نقاط القوة والفجوات — خريطة موقفك الحقيقي</div>
+  </div>
+  <div class="section-body">
+    <div class="grid-2">
+      <div>
+        <div class="success-box">
+          <h4>✅ نقاط قوتك الحقيقية (استثمرها بقوة)</h4>
+          <p></p>
+        </div>
+        <ul class="guide-list green">
+          <li><strong>بكالوريوس علم النفس:</strong> تفهم سلوك المستهلك، الدوافع الشرائية، وكيف تكتب محتوى يحرّك المشاعر — هذا سلاحك السري في صياغة المحتوى.</li>
+          <li><strong>خبرة في التعامل مع العملاء منذ 2015:</strong> تفهم الجمهور وكيف يفكر وما يريد — وهذا جوهر السوشيال ميديا.</li>
+          <li><strong>معرفة بـ Facebook, Instagram, TikTok:</strong> مذكورة في CV — ركّز على ذكر أمثلة عملية.</li>
+          <li><strong>أدوات الذكاء الاصطناعي:</strong> ميزة حديثة قوية — يمكنك كتابة محتوى أسرع وأكثر تنوعاً باستخدام AI.</li>
+          <li><strong>التعلم السريع والتكيّف:</strong> مذكورة كقدرة لا نهائية في CV — أثبتها بأمثلة.</li>
+          <li><strong>فهم التقنية:</strong> خلفيتك التقنية تجعلك تفهم أدوات الجدولة والتحليل بسهولة.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="warning-box">
+          <h4>⚠️ الفجوات التي يجب معالجتها (لا تكذب — أعد صياغتها)</h4>
+          <p></p>
+        </div>
+        <ul class="guide-list red">
+          <li><strong>الفوتوشوب:</strong> إذا لم تكن تتقنه بالكامل، قل: "أستخدم الفوتوشوب للتعديلات الأساسية وأعمل على تطوير مهاراتي فيه، وحالياً أستخدم أيضاً Canva وأدوات AI للتصميم السريع."</li>
+          <li><strong>كتابة المحتوى كخبرة رسمية:</strong> CV لا تذكرها صراحة — اربطها بخبرتك في كتابة وصف المنتجات والتواصل مع العملاء.</li>
+          <li><strong>الخبرة المباشرة في شركة طبية:</strong> حوّلها لميزة — "خلفيتي في علم النفس تجعلني أفهم الجانب الصحي والسلوكي للمريض."</li>
+          <li><strong>بورتفوليو سوشيال ميديا:</strong> إذا لم يكن لديك، ابدأ بإنشاء 3-5 نماذج تصميم قبل المقابلة.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="psych-box">
+      <h4>🧠 قاعدة نفسية ذهبية — تأثير الإطار (Framing Effect)</h4>
+      <p>لا تقل أبداً "ما أعرف" أو "ما سويتها قبل". استخدم تأطير إيجابي: "أنا حالياً في مرحلة تطوير هذه المهارة وقطعت شوط جيد" أو "تعلمتها مؤخراً وبدأت بتطبيقها عملياً". المُقابِل يقيّم طريقة تفكيرك أكثر من إجابتك الحرفية. من يعترف بالنقص بثقة ويقدم خطة تطوير = ناضج مهنياً.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 3: الأخطاء الشائعة القاتلة
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-red">🚨</div>
+    <div class="section-title">٣. الأخطاء القاتلة التي يرتكبها 90% من المتقدمين — تجنبها تماماً</div>
+  </div>
+  <div class="section-body">
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #1: الوصول متأخراً أو بمظهر غير مناسب</h4>
+      <p>شركة طبية مرموقة = مظهر رسمي نظيف. لا تذهب بجينز ممزق أو تيشيرت. البدلة الكاملة ليست ضرورية، لكن قميص مكوي + بنطلون رسمي + حذاء نظيف = الحد الأدنى. الوصول قبل 10-15 دقيقة من الموعد.</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #2: عدم البحث عن الشركة قبل المقابلة</h4>
+      <p>ابحث عن "مكتب المبدع العلمي" في السوشيال ميديا الآن. شوف صفحاتهم، نوع المحتوى الذي ينشرونه، تصاميمهم، أسلوبهم. عندما يسألونك "شنو تعرف عن شركتنا؟" لازم يكون عندك إجابة مبنية على بحث فعلي — هذا يُظهر الجدية والاهتمام الحقيقي.</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #3: الإجابات العامة والمبهمة</h4>
+      <p>لا تقل "أنا شاطر بالسوشيال ميديا" — هذا كلام فارغ. قل: "أدرت صفحة على إنستغرام ورفعت التفاعل من 200 لايك إلى 1200 خلال شهرين باستخدام استراتيجية Reels + Hashtags مستهدفة." أعطِ أرقام ونتائج حقيقية. حتى لو كانت صفحتك الشخصية.</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #4: الكذب حول المهارات</h4>
+      <p>إذا قلت "أتقن الفوتوشوب" وطلبوا منك عمل تصميم سريع في المقابلة (وهذا يحصل)، ستنكشف فوراً. كن صادقاً لكن ذكياً. الصدق + خطة تطوير واضحة = أفضل من كذب يُكتشف.</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #5: التحدث سلبياً عن أعمال سابقة</h4>
+      <p>لا تنتقد أي عمل سابق أو مدير أو زميل. حتى لو كانت التجربة سيئة، قل: "كانت تجربة تعلمت منها الكثير وأعطتني خبرة في التعامل مع التحديات." المُقابِل يفكر: "إذا ينتقد الآخرين، سينتقدنا لاحقاً."</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #6: عدم طرح أسئلة في نهاية المقابلة</h4>
+      <p>عندما يقولون "عندك أسئلة؟" — لا تقل "لا، شكراً". هذا يُظهر عدم اهتمام. اطرح سؤالين ذكيين على الأقل (سنعطيك أمثلة لاحقاً).</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #7: التحدث كثيراً عن الراتب في البداية</h4>
+      <p>لا تسأل عن الراتب أولاً. انتظر حتى يطرحوه هم. إذا سألوك عن توقعاتك المالية، أعطِ نطاق معقول وقل "أنا مرن وأبحث عن فرصة تطوير أكثر من الراتب فقط."</p>
+    </div>
+
+    <div class="warning-box">
+      <h4>❌ الخطأ #8: إرسال CV بدون رسالة مرتبة عبر الواتساب</h4>
+      <p>الإعلان يقول "إرسال السيرة عبر الواتساب مع كتابة اسم الوظيفة في بداية الرسالة". كثير من المتقدمين يرسلون CV فقط بدون أي نص. أنت اكتب رسالة احترافية قصيرة (سنكتبها لك في القسم التالي).</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 4: التحضير النفسي
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-purple">🧠</div>
+    <div class="section-title">٤. التحضير النفسي والذهني — علم النفس في خدمتك</div>
+  </div>
+  <div class="section-body">
+
+    <div class="psych-box">
+      <h4>🎯 تقنية التصور الذهني (Visualization)</h4>
+      <p>قبل المقابلة بيوم، أغلق عيونك لمدة 5 دقائق وتخيل نفسك تدخل المكان بثقة، تصافح المُقابِل بقوة معتدلة، تجلس بارتياح، تجاوب بهدوء وابتسامة. تخيل أنك خرجت والمُقابِل معجب بك. هذه التقنية مُثبتة علمياً — تُقلل القلق بنسبة 40% وتزيد الأداء.</p>
+    </div>
+
+    <div class="psych-box">
+      <h4>💪 وضعية القوة (Power Pose) — Amy Cuddy</h4>
+      <p>قبل الدخول بدقيقتين، قف في مكان خاص (الحمام مثلاً) وخذ وضعية القوة: يدين على الخصر، صدر مرفوع، رأس عالي — لمدة دقيقتين. هذا يرفع هرمون التستوستيرون (الثقة) ويخفض الكورتيزول (التوتر). ستدخل المقابلة وأنت تشع ثقة.</p>
+    </div>
+
+    <div class="psych-box">
+      <h4>🫁 تقنية التنفس 4-7-8</h4>
+      <p>إذا شعرت بالتوتر أثناء المقابلة: شهيق من الأنف 4 ثوانٍ — احبس النفس 7 ثوانٍ — زفير من الفم 8 ثوانٍ. كرر 3 مرات. هذا ينشط الجهاز العصبي اللاإرادي ويهدئك فوراً بدون أن يلاحظ أحد.</p>
+    </div>
+
+    <div class="psych-box">
+      <h4>🪞 تأثير المرآة (Mirroring)</h4>
+      <p>قلّد لغة جسد المُقابِل بشكل طبيعي وبطيء. إذا مال للأمام، مِل قليلاً. إذا استخدم يديه، استخدم يديك. هذا يخلق ارتباط لا واعي (Rapport) يجعله يشعر بالراحة معك. لكن لا تبالغ — يجب أن يكون طبيعياً.</p>
+    </div>
+
+    <div class="psych-box">
+      <h4>📝 تأثير الأولوية والحداثة (Primacy & Recency Effect)</h4>
+      <p>المُقابِل يتذكر أكثر: أول شيء قلته + آخر شيء قلته. لذلك: <strong>ابدأ بأقوى نقطة عندك</strong> (مثل خلفيتك في علم النفس وفهمك للمستهلك) <strong>واختم بعبارة مؤثرة</strong> (مثل: "أنا مستعد أبدأ فوراً وأثبت لكم أني الشخص المناسب").</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">!</span> العقلية الصحيحة قبل الدخول</div>
+      <ul class="guide-list purple">
+        <li>لا تذهب وأنت محتاج — اذهب وأنت تقدم قيمة. أنت لا تتسوّل وظيفة، أنت تعرض خدماتك.</li>
+        <li>المقابلة طريق ذو اتجاهين: أنت أيضاً تقيّمهم. هل هذا المكان مناسب لك؟</li>
+        <li>التوتر البسيط طبيعي ومفيد (يزيد اليقظة). التوتر الشديد فقط هو العدو.</li>
+        <li>تذكّر: المُقابِل إنسان مثلك، لديه توتراته ومشاكله. ليس وحشاً.</li>
+        <li>إذا لم تُقبل — هذه ليست نهاية العالم. كل مقابلة = تدريب مجاني.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 5: أسئلة المقابلة المتوقعة + الأجوبة المثالية
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-gold">💬</div>
+    <div class="section-title">٥. أسئلة المقابلة المتوقعة + الأجوبة النموذجية المُحَضَّرة</div>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="qa-q"><span class="q-icon">س1</span> عرّفنا عن نفسك / حدثنا عن نفسك</div>
+      <div class="qa-a">
+        "أنا حسين علي، خريج <em>بكالوريوس علم نفس</em> من الجامعة المستنصرية. عندي خبرة عملية مستمرة منذ <em>2015</em> في التعامل المباشر مع العملاء والمبيعات التقنية، وهذا علمني كيف أفهم <strong>سلوك المستهلك</strong> وأعرف ماذا يريد قبل أن يطلب. جمعت بين دراستي الأكاديمية في فهم النفس البشرية ومهاراتي العملية في <strong>إدارة صفحات السوشيال ميديا</strong> وإنشاء المحتوى. أستخدم أدوات الذكاء الاصطناعي الحديثة لرفع جودة وسرعة إنتاج المحتوى، وأنا متفرغ تماماً ومستعد للالتزام الكامل."
+      </div>
+      <div class="qa-tip">💡 نصيحة: هذه الإجابة يجب أن تكون 60-90 ثانية فقط. تدرّب عليها 10 مرات بصوت عالي قبل المقابلة.</div>
+    </div>
+
+    <div class="qa-block teal">
+      <div class="qa-q"><span class="q-icon">س2</span> ليش تبي هاي الوظيفة بالتحديد؟</div>
+      <div class="qa-a">
+        "لأنها تجمع كل شيء أنا شغوف به: <strong>إنشاء المحتوى الإبداعي</strong> + <strong>فهم الجمهور</strong> + <strong>المجال الطبي</strong> الذي يحتاج محتوى دقيق وموثوق. أنا أؤمن أن السوشيال ميديا في المجال الطبي لازم تكون مختلفة — تجمع بين المصداقية العلمية والأسلوب الجذاب. وخلفيتي في علم النفس تساعدني أصيغ رسائل تصل للمريض والطبيب بنفس الوقت. بالإضافة لذلك، مكتب المبدع العلمي اسم يدل على الجودة وأبي أكون جزء من هذا الفريق."
+      </div>
+      <div class="qa-tip">💡 نصيحة: اذكر اسم الشركة بالتحديد — هذا يُظهر أنك مهتم فعلاً وليس مجرد تقديم عشوائي.</div>
+    </div>
+
+    <div class="qa-block">
+      <div class="qa-q"><span class="q-icon">س3</span> شنو خبرتك بإدارة صفحات السوشيال ميديا؟</div>
+      <div class="qa-a">
+        "عندي خبرة عملية في إدارة محتوى صفحات على <em>Facebook و Instagram و TikTok</em>. أفهم الفرق بين خوارزمية كل منصة — مثلاً الـ Reels والـ Stories على إنستغرام تحتاج محتوى سريع وبصري، بينما فيسبوك يحتاج محتوى أطول وتفاعلي. على تيك توك، المحتوى لازم يكون ترندي وقصير (15-60 ثانية). أعرف كيف أجدول المنشورات، أتابع الـ <strong>Insights</strong> وأحلل أفضل أوقات النشر، وأتعامل مع تعليقات ورسائل الجمهور بسرعة واحترافية."
+      </div>
+      <div class="qa-tip">💡 نصيحة: إذا سألوك عن أرقام، قل مثلاً: "رفعت التفاعل على صفحة من X إلى Y" حتى لو كانت صفحتك الشخصية أو صفحة لصديق.</div>
+    </div>
+
+    <div class="qa-block green">
+      <div class="qa-q"><span class="q-icon">س4</span> كيف تكتب محتوى لشركة طبية؟ شنو أسلوبك؟</div>
+      <div class="qa-a">
+        "المحتوى الطبي يحتاج <strong>توازن دقيق</strong> بين ثلاثة أشياء: <em>المصداقية العلمية</em> (لا أنشر معلومة بدون مصدر)، <em>البساطة</em> (المريض العادي لازم يفهم)، و<em>الجاذبية البصرية</em> (تصميم يوقف الـ scroll). أسلوبي يعتمد على خطوات: أبحث عن المعلومة الصحيحة، أبسطها بلغة يومية، أضيف عنصر مشوّق (سؤال، إحصائية مفاجئة، قصة مريض)، ثم أصممها بطريقة مرتبة ونظيفة. دراستي في علم النفس علمتني كيف أكتب عناوين تجذب الانتباه وتحفز القارئ يكمل."
+      </div>
+    </div>
+
+    <div class="qa-block purple">
+      <div class="qa-q"><span class="q-icon">س5</span> شنو علاقة علم النفس بالسوشيال ميديا؟</div>
+      <div class="qa-a">
+        "علاقة قوية جداً! <strong>كل السوشيال ميديا مبنية على علم النفس</strong>: لماذا الناس تضغط Like؟ لماذا تشارك بوست معين؟ ما الذي يجعلها توقف الـ Scrolling؟ كل هذا سلوك نفسي. أنا أفهم مبادئ مثل: <em>تأثير الندرة</em> (العرض لمدة محدودة)، <em>الدليل الاجتماعي</em> (آراء العملاء)، <em>تأثير القصة</em> (Storytelling أقوى من المعلومة الجافة)، <em>تأثير الألوان</em> على المزاج والقرار. هذه الأدوات أطبقها في كل بوست أكتبه."
+      </div>
+      <div class="qa-tip">💡 هذا سؤال مفصلي — إجابتك هنا ستميزك عن 95% من المتقدمين الذين لا يملكون هذه الخلفية.</div>
+    </div>
+
+    <div class="qa-block">
+      <div class="qa-q"><span class="q-icon">س6</span> شنو مستواك بالفوتوشوب؟</div>
+      <div class="qa-a">
+        "أستخدم الفوتوشوب للتصميمات الأساسية والمتوسطة — تصميم بوستات سوشيال ميديا، تعديل الصور، إضافة النصوص والفلاتر، والعمل مع الـ Layers. بالإضافة لذلك، أستخدم أدوات حديثة مثل <strong>Canva Pro</strong> للتصاميم السريعة و<strong>أدوات AI</strong> مثل Midjourney للمحتوى البصري الإبداعي. أنا أطور مهاراتي باستمرار وعندي القدرة على التعلم السريع — إذا احتجت أي مهارة إضافية، أتقنها خلال أسابيع."
+      </div>
+      <div class="qa-tip">💡 كن صادقاً عن مستواك الفعلي. إذا كنت مبتدئ، قل "أعمل على تطويره" — لا تقل "أنا خبير" لأنهم قد يختبرونك فوراً.</div>
+    </div>
+
+    <div class="qa-block teal">
+      <div class="qa-q"><span class="q-icon">س7</span> كيف تتعامل مع تعليق سلبي أو أزمة على السوشيال ميديا؟</div>
+      <div class="qa-a">
+        "أول شيء: <strong>لا أحذف التعليق أبداً</strong> (إلا إذا كان مسيء أو spam). التعليقات السلبية فرصة لإظهار احترافية الشركة. أتعامل بأسلوب: <em>اعترف → اعتذر → اعمل</em>. أرد بسرعة، أشكر الشخص على ملاحظته، أوضح أن الشركة تأخذ الأمر بجدية، وأنقل المحادثة للخاص إذا كانت حساسة. هدفي: تحويل العميل الغاضب إلى أكبر مدافع عن البراند."
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="qa-q"><span class="q-icon">س8</span> شلون تقيس نجاح المحتوى؟ شنو الـ KPIs الأهم؟</div>
+      <div class="qa-a">
+        "أركز على مؤشرات حقيقية وليس مؤشرات غرور (Vanity Metrics). أهم المؤشرات: <strong>Engagement Rate</strong> (نسبة التفاعل مقارنة بالمتابعين)، <strong>Reach</strong> (كم شخص شاف المحتوى)، <strong>Saves & Shares</strong> (أقوى إشارة للخوارزمية)، <strong>Click-through Rate</strong> إذا في لينك، و<strong>نمو المتابعين العضوي</strong>. أعد تقارير أسبوعية/شهرية فيها مقارنة الأداء وتوصيات للتحسين."
+      </div>
+    </div>
+
+    <div class="qa-block green">
+      <div class="qa-q"><span class="q-icon">س9</span> شنو نقطة ضعفك؟</div>
+      <div class="qa-a">
+        "أحياناً أكون <em>مثالي أكثر من اللازم</em> — أقضي وقت أطول في تحسين التفاصيل الصغيرة. لكن تعلمت أن السوشيال ميديا تحتاج سرعة، فبدأت أحط لنفسي <strong>مواعيد نهائية صارمة</strong> لكل مهمة وأستخدم قاعدة 80/20: المحتوى الجيد المنشور أفضل من المثالي المتأخر."
+      </div>
+      <div class="qa-tip">💡 هذه طريقة ذكية: تذكر نقطة ضعف حقيقية لكنها ليست قاتلة، وتُظهر أنك واعي لها وعندك حل.</div>
+    </div>
+
+    <div class="qa-block purple">
+      <div class="qa-q"><span class="q-icon">س10</span> وين تشوف نفسك بعد سنتين؟</div>
+      <div class="qa-a">
+        "أشوف نفسي وقد أصبحت <strong>الشخص المرجعي</strong> للمحتوى الرقمي في مكتب المبدع العلمي — بحيث تكون الصفحات نمت بشكل كبير وبنينا مجتمع متفاعل من المتابعين. أطمح أتعلم أكثر عن <em>التسويق الطبي الرقمي</em> وأصبح قادر على إدارة حملات إعلانية مدفوعة وتوسيع الحضور الرقمي للشركة على منصات جديدة."
+      </div>
+      <div class="qa-tip">💡 اربط مستقبلك بمستقبل الشركة — هذا يُظهر الولاء والرؤية الطويلة.</div>
+    </div>
+
+    <div class="qa-block">
+      <div class="qa-q"><span class="q-icon">س11</span> ليش نختارك أنت وليس غيرك؟</div>
+      <div class="qa-a">
+        "لأني أملك مزيج نادر: <strong>فهم علمي لسلوك الناس</strong> (من دراسة علم النفس) + <strong>خبرة عملية في التعامل مع العملاء</strong> (منذ 2015) + <strong>مهارات تقنية ورقمية</strong> + <strong>شغف حقيقي بالمحتوى الإبداعي</strong>. أغلب المتقدمين عندهم واحدة أو اثنتين من هذه. أنا عندي الأربعة. وأنا متفرغ تماماً ومستعد أبدأ فوراً وأثبت لكم النتائج خلال أول شهر."
+      </div>
+    </div>
+
+    <div class="qa-block teal">
+      <div class="qa-q"><span class="q-icon">س12</span> شنو توقعاتك للراتب؟</div>
+      <div class="qa-a">
+        "أنا مرن بخصوص الراتب وأقدّر أن الشركة لها سياسة عادلة. ما يهمني أكثر هو <strong>فرصة التطور</strong> والعمل في بيئة احترافية. أبي أثبت نفسي أولاً وأنا واثق أن الراتب سيعكس أدائي مع الوقت. لكن إذا ممكن أعرف النطاق الذي تحددونه للوظيفة، أقدر أعطيكم رأيي."
+      </div>
+      <div class="qa-tip">💡 هذه الإجابة ذكية لأنك أعدت الكرة لملعبهم بدون أن تخسر قوتك التفاوضية.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 6: استراتيجية البيع الذاتي
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-gold">🎯</div>
+    <div class="section-title">٦. استراتيجية البيع الذاتي — كيف تبيع نفسك بذكاء</div>
+  </div>
+  <div class="section-body">
+
+    <div class="card">
+      <div class="card-title"><span class="num">A</span> رسالة الواتساب الاحترافية (أرسلها مع CV)</div>
+      <div class="qa-block green" style="direction: rtl;">
+        <div class="qa-a" style="padding-right: 0;">
+          <strong>وظيفة: موظف سوشيال ميديا - قسم الإعلام</strong><br><br>
+          السلام عليكم ورحمة الله،<br>
+          أنا حسين علي، خريج بكالوريوس علم نفس من الجامعة المستنصرية، ولدي خبرة عملية مستمرة منذ 2015 في التعامل مع العملاء وإدارة المحتوى الرقمي.<br><br>
+          أتقدم لوظيفة موظف سوشيال ميديا وأجد أنها تتوافق بشكل كبير مع مهاراتي في:<br>
+          • إدارة صفحات Facebook, Instagram, TikTok<br>
+          • صياغة المحتوى الإبداعي وكتابة النصوص التسويقية<br>
+          • استخدام الفوتوشوب وأدوات التصميم الحديثة<br>
+          • فهم سلوك المستهلك (من خلفيتي الأكاديمية في علم النفس)<br><br>
+          أنا متفرغ تماماً ومستعد للبدء فوراً.<br>
+          مرفق السيرة الذاتية، وأتطلع لفرصة مقابلة شخصية.<br><br>
+          مع التقدير،<br>
+          حسين علي<br>
+          +964 773 138 7007
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">B</span> قاعدة الـ 30 ثانية الأولى — اصنع انطباعاً لا يُنسى</div>
+      <ul class="guide-list">
+        <li><strong>الابتسامة الحقيقية (Duchenne Smile):</strong> ابتسم بعيونك وليس فقط بشفايفك — المُقابِل يميّز الابتسامة المزيفة لاشعورياً.</li>
+        <li><strong>المصافحة:</strong> قوية لكن ليست ساحقة. 2-3 ثوانٍ. مع تواصل بصري مباشر.</li>
+        <li><strong>الجملة الافتتاحية:</strong> "أهلاً، أنا حسين. أشكركم على إتاحة هذه الفرصة" — بسيطة ومحترمة.</li>
+        <li><strong>لا تجلس حتى يطلبون منك:</strong> تفصيل صغير يُظهر الاحترام والوعي الاجتماعي.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">C</span> تقنية STAR للإجابات القوية</div>
+      <ul class="guide-list teal">
+        <li><strong>S — Situation (الموقف):</strong> "كنت أدير صفحة لمتجر إلكتروني..."</li>
+        <li><strong>T — Task (المهمة):</strong> "المطلوب كان زيادة المتابعين والمبيعات..."</li>
+        <li><strong>A — Action (ما فعلته):</strong> "بدأت بتغيير استراتيجية المحتوى إلى Reels قصيرة..."</li>
+        <li><strong>R — Result (النتيجة):</strong> "خلال شهرين ارتفع التفاعل 300% والمبيعات 40%."</li>
+      </ul>
+      <div class="qa-tip">💡 استخدم هذه التقنية لكل سؤال يبدأ بـ "احكيلي عن موقف..." أو "أعطيني مثال..."</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">D</span> ما تأخذه معك للمقابلة</div>
+      <ul class="guide-list green">
+        <li>نسختين مطبوعتين من CV (واحدة لك وواحدة لهم — حتى لو أرسلتها إلكترونياً).</li>
+        <li>هاتفك فيه أمثلة من تصاميمك أو محتوى سابق (Portfolio رقمي جاهز).</li>
+        <li>ورقة صغيرة فيها 2-3 أفكار محتوى مقترحة لصفحاتهم (هذا سيصدمهم إيجابياً!).</li>
+        <li>قلم ودفتر صغير — يُظهر الجدية والاهتمام.</li>
+        <li>معلومات عن الشركة حفظتها (منتجاتهم، جمهورهم، أسلوبهم الحالي).</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 7: لغة الجسد والانطباع الأول
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-teal">🤝</div>
+    <div class="section-title">٧. لغة الجسد والتواصل غير اللفظي — 55% من التأثير</div>
+  </div>
+  <div class="section-body">
+
+    <div class="psych-box">
+      <h4>📊 قاعدة مهرابيان (Mehrabian's Rule)</h4>
+      <p>7% فقط من التأثير يأتي من الكلمات التي تقولها. 38% من نبرة صوتك. <strong>55% من لغة جسدك</strong>. هذا يعني أن طريقة جلوسك وحركة يديك وتعابير وجهك أهم من الكلام نفسه!</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="success-box">
+        <h4>✅ افعل هذا</h4>
+        <p>
+          • اجلس مستقيماً بميل طفيف للأمام (يُظهر الاهتمام)<br>
+          • تواصل بصري 60-70% من الوقت (ليس 100% — هذا مخيف)<br>
+          • استخدم يديك بحركات هادئة عند الحديث<br>
+          • أومئ برأسك عندما يتحدث المُقابِل (يُظهر الاستماع)<br>
+          • ابتسم عند اللحظات المناسبة<br>
+          • أبقِ يديك مفتوحة ومرئية (يُظهر الصدق)<br>
+          • خذ ثانية قبل الإجابة (تُظهر التفكير العميق)
+        </p>
+      </div>
+      <div class="warning-box">
+        <h4>❌ تجنب هذا</h4>
+        <p>
+          • تشبيك الأيدي أو وضعها في جيبك (دفاعية/عدم ثقة)<br>
+          • هز الرجل أو اللعب بالقلم (توتر مكشوف)<br>
+          • النظر للأرض أو الهاتف (عدم احترام)<br>
+          • الانحناء للخلف كثيراً (عدم اهتمام أو غرور)<br>
+          • لمس الوجه كثيراً (إشارة قلق/كذب لاشعورياً)<br>
+          • التحدث بسرعة كبيرة (يُظهر التوتر)<br>
+          • مقاطعة المُقابِل (أكبر خطأ ممكن)
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">!</span> نبرة الصوت — سلاحك الخفي</div>
+      <ul class="guide-list">
+        <li><strong>السرعة:</strong> تحدث بوتيرة متوسطة. بطيء جداً = ملل. سريع جداً = توتر. الهدف: واضح وهادئ.</li>
+        <li><strong>التنويع:</strong> غيّر نبرتك عند النقاط المهمة. لا تتحدث بصوت واحد مسطح (Monotone).</li>
+        <li><strong>الوقفات:</strong> الوقفة القصيرة (1-2 ثانية) قبل نقطة مهمة = تأثير درامي قوي.</li>
+        <li><strong>الصوت:</strong> ليس عالي جداً وليس خافت. اختبر: هل الشخص على بُعد 2 متر يسمعك بوضوح؟</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 8: خطة ما قبل المقابلة (24 ساعة)
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-orange">📅</div>
+    <div class="section-title">٨. خطة الـ 24 ساعة قبل المقابلة — جدول زمني دقيق</div>
+  </div>
+  <div class="section-body">
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="time">قبل 24 ساعة — المساء</div>
+        <div class="desc">
+          • ابحث عن مكتب المبدع العلمي في Google وكل منصات السوشيال ميديا<br>
+          • اقرأ 10-15 بوست من صفحاتهم — لاحظ الأسلوب والتصميم والجمهور<br>
+          • جهّز 2-3 أفكار محتوى جديدة يمكنك اقتراحها في المقابلة<br>
+          • اختر ملابسك وكويها (قميص رسمي + بنطلون داكن + حذاء نظيف)
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">قبل 12 ساعة — قبل النوم</div>
+        <div class="desc">
+          • راجع إجابات الأسئلة المتوقعة بصوت عالي 3 مرات<br>
+          • مارس تقنية التصور الذهني (Visualization) لمدة 5 دقائق<br>
+          • نم مبكراً — 7 ساعات نوم على الأقل (الدماغ المتعب = أداء ضعيف)<br>
+          • حط المنبه على وقت يعطيك ساعتين قبل الموعد
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">قبل 3 ساعات — الصباح</div>
+        <div class="desc">
+          • استحم واغسل وجهك بماء بارد (ينشط الدورة الدموية)<br>
+          • فطور خفيف صحي (بيض + خبز + عصير — لا تذهب بمعدة فارغة أو ممتلئة جداً)<br>
+          • راجع ملاحظاتك عن الشركة سريعاً<br>
+          • تأكد من شحن هاتفك وأن Portfolio جاهز للعرض
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">قبل ساعة — الانطلاق</div>
+        <div class="desc">
+          • انطلق مبكراً — احسب وقت المرور + 15 دقيقة إضافية<br>
+          • في الطريق: اسمع موسيقى تحبها أو بودكاست تحفيزي<br>
+          • لا تراجع الإجابات الآن — ثق بتحضيرك<br>
+          • خذ نفساً عميقاً وذكّر نفسك: "أنا مستعد ولدي ما أقدمه"
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">قبل 15 دقيقة — الوصول</div>
+        <div class="desc">
+          • ادخل الحمام: مرآة + Power Pose لدقيقتين + تنفس 4-7-8<br>
+          • تأكد من مظهرك: شعر مرتب، ملابس مكوية، رائحة خفيفة<br>
+          • أغلق هاتفك أو حطه صامت تماماً<br>
+          • اجلس في الاستقبال بهدوء — لا تلعب بهاتفك — كن حاضراً ذهنياً
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 9: نصائح علم النفس التطبيقي
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-purple">🔮</div>
+    <div class="section-title">٩. أسلحة علم النفس في المقابلة — استخدمها بذكاء</div>
+  </div>
+  <div class="section-body">
+
+    <div class="grid-3">
+      <div class="mini-card">
+        <div class="mc-icon">🎭</div>
+        <div class="mc-title">تأثير الهالة (Halo Effect)</div>
+        <div class="mc-desc">أول انطباع إيجابي يجعل المُقابِل يرى كل شيء بعده بإيجابية. لذلك: اجعل أول 30 ثانية مثالية!</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">🧲</div>
+        <div class="mc-title">تأثير التشابه (Similarity Bias)</div>
+        <div class="mc-desc">نحب من يشبهنا. اكتشف أي شيء مشترك مع المُقابِل (اهتمامات، مدينة، خبرة) واذكره بشكل طبيعي.</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">📖</div>
+        <div class="mc-title">تأثير القصة (Narrative Transport)</div>
+        <div class="mc-desc">الدماغ يتذكر القصص أكثر من الحقائق بـ 22 مرة. حوّل إجاباتك لقصص قصيرة بداية ووسط ونهاية.</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">⚓</div>
+        <div class="mc-title">تأثير المرساة (Anchoring)</div>
+        <div class="mc-desc">أول رقم تذكره يصبح المرجع. عند ذكر إنجازاتك، ابدأ بأكبر رقم أو أقوى إنجاز.</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">🔄</div>
+        <div class="mc-title">تأثير المعاملة بالمثل (Reciprocity)</div>
+        <div class="mc-desc">أعطِ قيمة أولاً (أفكار، اقتراحات) = المُقابِل يشعر بالتزام لا واعي نحوك ويريد يعطيك الفرصة.</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">✨</div>
+        <div class="mc-title">تأثير الإغلاق (Closure Effect)</div>
+        <div class="mc-desc">اختم المقابلة بعبارة قوية وواثقة. آخر كلمة تقولها = ما يتذكرونه عند اتخاذ القرار.</div>
+      </div>
+    </div>
+
+    <div class="psych-box" style="margin-top: 18px;">
+      <h4>🧠 تقنية "Name Drop" النفسية المتقدمة</h4>
+      <p>عندما تتحدث عن مهاراتك، اذكر أسماء أدوات وتقنيات محددة بدلاً من الكلام العام. بدلاً من "أعرف أحلل البيانات" — قل "أستخدم Facebook Insights و Instagram Analytics لتحديد أفضل أوقات النشر وأنواع المحتوى الأكثر تفاعلاً." ذكر أسماء محددة يخلق انطباع الخبرة العملية الحقيقية في عقل المُقابِل (تأثير الملموسية — Concreteness Effect).</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">PRO</span> كيف تقرأ المُقابِل أثناء المقابلة</div>
+      <ul class="guide-list purple">
+        <li><strong>إذا مال للأمام وأخذ ملاحظات:</strong> أنت تسير بشكل ممتاز — استمر بنفس الأسلوب.</li>
+        <li><strong>إذا نظر للساعة أو هاتفه:</strong> كلامك طويل — اختصر وأعطِ الخلاصة مباشرة.</li>
+        <li><strong>إذا أومأ برأسه كثيراً:</strong> يتفق معك — عزز النقطة بمثال سريع.</li>
+        <li><strong>إذا تشابك ذراعيه:</strong> قد يكون غير مقتنع — اسأل "هل تريد أوضح أكثر؟"</li>
+        <li><strong>إذا ابتسم وتحدث عن الفريق:</strong> يتخيلك كجزء منه — علامة ممتازة.</li>
+        <li><strong>إذا سأل أسئلة تفصيلية عن راتبك/بدء العمل:</strong> يفكر بجدية في توظيفك!</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     القسم 10: خطة الطوارئ والأسئلة الصعبة
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-red">🛡️</div>
+    <div class="section-title">١٠. خطة الطوارئ — التعامل مع المواقف الصعبة وغير المتوقعة</div>
+  </div>
+  <div class="section-body">
+
+    <div class="card">
+      <div class="card-title"><span class="num">1</span> إذا طلبوا منك عمل تصميم فوري (Test)</div>
+      <ul class="guide-list">
+        <li>لا تخاف. قل: "بكل سرور!" وابدأ.</li>
+        <li>استخدم هاتفك + Canva أو حتى ورقة وقلم لرسم Wireframe.</li>
+        <li>الهدف ليس التصميم المثالي — بل إظهار طريقة تفكيرك الإبداعية.</li>
+        <li>تحدث أثناء العمل: "هنا أضع العنوان الجاذب... هنا الصورة... هنا CTA..."</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">2</span> إذا سألوا سؤال لا تعرف إجابته</div>
+      <ul class="guide-list teal">
+        <li>لا تكذب ولا تتجمد. قل: "سؤال ممتاز! بصراحة ما عندي إجابة جاهزة الآن..."</li>
+        <li>ثم أضف: "...لكن طريقتي: أبحث، أتعلم، وأطبق. أقدر أرجع لكم بإجابة مدروسة."</li>
+        <li>هذا يُظهر: صدق + تواضع + قدرة على حل المشاكل = صفات الموظف المثالي.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">3</span> إذا سألوا "ليش تركت شغلك السابق؟"</div>
+      <ul class="guide-list green">
+        <li>لا تقل أبداً: "ما يعجبني" أو "مديري سيء" أو "راتب قليل".</li>
+        <li>قل: "أبحث عن فرصة تطوير أكبر في مجال أنا شغوف فيه وهو المحتوى الرقمي."</li>
+        <li>أو: "أريد أن أوظف تخصصي الأكاديمي في بيئة عمل احترافية مثل شركتكم."</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">4</span> إذا كان المُقابِل عدواني أو ضاغط (Stress Interview)</div>
+      <ul class="guide-list red">
+        <li>هذا اختبار متعمد! يريدون يشوفون ردة فعلك تحت الضغط.</li>
+        <li>حافظ على هدوئك. تنفس. لا تأخذ الأمر شخصياً.</li>
+        <li>أجب بثقة وهدوء: "أقدّر السؤال وأفهم أهمية العمل تحت ضغط..."</li>
+        <li>إذا نجحت في هذا = أنت أثبتت أنك تتحمل ضغط السوشيال ميديا اليومي.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">5</span> أسئلة ذكية تطرحها أنت في النهاية</div>
+      <ul class="guide-list purple">
+        <li>"ما هي أكبر أهداف قسم الإعلام في الفترة القادمة؟" — يُظهر تفكير استراتيجي.</li>
+        <li>"كيف يبدو يوم عمل عادي لموظف السوشيال ميديا عندكم؟" — يُظهر واقعية.</li>
+        <li>"ما هي المنصة الأكثر أهمية لكم حالياً؟" — يُظهر رغبة في التركيز والنتائج.</li>
+        <li>"هل هناك فترة تجريبية؟ وما المعايير التي تقيّمون بها النجاح؟" — يُظهر ثقة.</li>
+        <li>لا تسأل عن الإجازات أو ساعات العمل في أول مقابلة!</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="num">6</span> ما بعد المقابلة — المتابعة الذكية</div>
+      <ul class="guide-list">
+        <li><strong>بعد 24 ساعة:</strong> أرسل رسالة شكر قصيرة عبر الواتساب: "شكراً لوقتكم اليوم، استمتعت بالحديث وأتطلع للفرصة."</li>
+        <li><strong>بعد 3-5 أيام:</strong> إذا لم يردوا، أرسل رسالة متابعة مهذبة واحدة فقط.</li>
+        <li><strong>بعد أسبوع:</strong> إذا لم يردوا — تقبّل الأمر وامضِ قدماً. لا تلحّ.</li>
+        <li>دوّن ملاحظاتك: ما الأسئلة التي أجبت عليها جيداً؟ أين تعثرت؟ للتحسين القادم.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     BONUS: ملخص تنفيذي سريع
+═══════════════════════════════════════════════════════ -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-gold">⭐</div>
+    <div class="section-title">ملخص تنفيذي — أهم 10 قواعد ذهبية (احفظها!)</div>
+  </div>
+  <div class="section-body">
+    <div class="grid-2">
+      <div class="mini-card">
+        <div class="mc-icon">1️⃣</div>
+        <div class="mc-title">ابحث عن الشركة</div>
+        <div class="mc-desc">تعرّف على صفحاتهم ومنتجاتهم وأسلوبهم قبل المقابلة</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">2️⃣</div>
+        <div class="mc-title">احكِ قصص لا حقائق</div>
+        <div class="mc-desc">بدل "أنا شاطر" — احكِ موقف فيه بداية ومشكلة وحل ونتيجة</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">3️⃣</div>
+        <div class="mc-title">استثمر علم النفس</div>
+        <div class="mc-desc">هذه ميزتك التنافسية الأقوى — اذكرها في كل إجابة تقريباً</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">4️⃣</div>
+        <div class="mc-title">كن صادقاً بذكاء</div>
+        <div class="mc-desc">لا تكذب لكن أعد صياغة نقاط الضعف كفرص تطوير</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">5️⃣</div>
+        <div class="mc-title">جهّز Portfolio</div>
+        <div class="mc-desc">حتى 3-5 نماذج بسيطة أفضل من لا شيء — الأمثلة تتحدث</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">6️⃣</div>
+        <div class="mc-title">تحكم بلغة جسدك</div>
+        <div class="mc-desc">اجلس مستقيم، تواصل بصري، يدين مفتوحتين، لا هز رجل</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">7️⃣</div>
+        <div class="mc-title">اقترح أفكار</div>
+        <div class="mc-desc">جهّز 2-3 أفكار محتوى لصفحاتهم — هذا يصدم المُقابِل إيجابياً</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">8️⃣</div>
+        <div class="mc-title">اطرح أسئلة ذكية</div>
+        <div class="mc-desc">في النهاية اسأل عن الأهداف والتوقعات — لا تسأل عن الإجازات</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">9️⃣</div>
+        <div class="mc-title">أول 30 ثانية = كل شيء</div>
+        <div class="mc-desc">ابتسامة + مصافحة + جملة واثقة = 50% من نجاح المقابلة</div>
+      </div>
+      <div class="mini-card">
+        <div class="mc-icon">🔟</div>
+        <div class="mc-title">تابع بعد المقابلة</div>
+        <div class="mc-desc">رسالة شكر بعد 24 ساعة تميزك عن 95% من المتقدمين</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="guide-footer">
+  <div class="brand">Hussein Ali — Interview Mastery Guide</div>
+  <p>دليل مُعد بأسلوب احترافي يجمع بين علم النفس التطبيقي وخبرة الموارد البشرية واستراتيجيات السوشيال ميديا</p>
+  <p style="margin-top: 8px; color: var(--gold);">بالتوفيق يا حسين 🌟 — أنت أقوى مما تعتقد</p>
+</div>
+
+</div>
+</body>
+</html>
+
+
